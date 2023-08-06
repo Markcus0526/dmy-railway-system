@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/loginback" android:id="@+id/rlLoginBack">
+    <ImageView
+            android:layout_width="130px"
+            android:layout_height="45px"
+            android:id="@+id/imgLogin_Mark" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_marginLeft="130px" android:layout_marginTop="270px" android:scaleType="fitCenter"
+            android:src="@drawable/mark"/>
+    <ImageView
+            android:layout_width="324px"
+            android:layout_height="77px"
+            android:id="@+id/imgLogin_XinXiPingTai" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+            android:layout_marginRight="110px" android:layout_marginTop="280px" android:scaleType="fitCenter"
+            android:src="@drawable/xinxipingtai"/>
+    <ImageView
+            android:layout_width="157px"
+            android:layout_height="31px"
+            android:id="@+id/imgLogin_KeHuDuan"
+            android:layout_marginLeft="120px" android:layout_below="@+id/imgLogin_Mark"
+            android:layout_marginTop="10px" android:scaleType="fitCenter" android:src="@drawable/kehuduan"/>
+    <ImageView
+            android:layout_width="80px"
+            android:layout_height="84px"
+            android:id="@+id/imgLogin_UserIcon" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_marginLeft="95px" android:layout_marginTop="480px" android:scaleType="fitXY"
+            android:src="@drawable/usericon"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLogin_UserID" android:layout_alignTop="@+id/imgLogin_UserIcon"
+            android:layout_toRightOf="@+id/imgLogin_UserIcon" android:layout_alignBottom="@+id/imgLogin_UserIcon"
+            android:layout_alignParentRight="true" android:layout_marginRight="95px" android:background="@color/white"
+            android:paddingLeft="@dimen/EditTextLeftPadding" android:textColor="@color/black"
+            android:textSize="@dimen/EditTextFontSize" android:hint="@string/please_insert_userid"
+            android:ellipsize="end" android:singleLine="true"/>
+    <ImageView
+            android:layout_width="80px"
+            android:layout_height="84px"
+            android:id="@+id/imgLogin_LockIcon" android:layout_below="@+id/imgLogin_UserIcon"
+            android:layout_alignLeft="@+id/imgLogin_UserIcon" android:layout_marginTop="40px"
+            android:scaleType="fitXY" android:src="@drawable/lockicon"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/txtLogin_Password" android:layout_alignTop="@+id/imgLogin_LockIcon"
+            android:layout_toRightOf="@+id/imgLogin_LockIcon" android:layout_alignBottom="@+id/imgLogin_LockIcon"
+            android:layout_alignRight="@+id/txtLogin_UserID" android:background="@color/white"
+            android:textColor="@color/black" android:textSize="@dimen/EditTextFontSize"
+            android:paddingLeft="@dimen/EditTextLeftPadding" android:hint="@string/please_insert_password"
+            android:singleLine="true" android:ellipsize="end"/>
+    <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:id="@+id/imgLogin_RememberPassword" android:layout_below="@+id/imgLogin_LockIcon"
+            android:layout_alignLeft="@+id/imgLogin_LockIcon" android:layout_marginTop="35px"
+            android:scaleType="fitXY" android:src="@drawable/uncheck"/>
+    <TextView
+            android:layout_width="140px"
+            android:layout_height="wrap_content"
+            android:text="@string/jizhumima"
+            android:id="@+id/lblLogin_RememberPassword" android:layout_alignTop="@+id/imgLogin_RememberPassword"
+            android:layout_toRightOf="@+id/imgLogin_RememberPassword" android:layout_alignBottom="@+id/imgLogin_RememberPassword"
+            android:layout_marginLeft="30px" android:textColor="@color/lightblue"
+            android:textSize="@dimen/EditTextFontSize" android:gravity="center_vertical|left"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="90px"
+            android:text="@string/denglu"
+            android:id="@+id/btnLogin_Login" android:layout_below="@+id/lblLogin_RememberPassword"
+            android:layout_alignRight="@+id/txtLogin_Password" android:layout_marginTop="35px"
+            android:layout_alignLeft="@+id/imgLogin_RememberPassword" android:background="@drawable/bluebutton"
+            android:textColor="@color/white" android:textSize="@dimen/ButtonFontSize"/>
+</RelativeLayout>
+

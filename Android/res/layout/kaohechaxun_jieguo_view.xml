@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/rectgrayrect_layout" android:id="@+id/rlKaoHeChaXun_JieGuoViewBack">
+    <RelativeLayout
+            android:layout_width="660px"
+            android:layout_height="110px">
+        <TextView
+                android:layout_width="300px"
+                android:layout_height="fill_parent"
+                android:id="@+id/lblKaoHeChaXun_JieGuoView_Title" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize" android:singleLine="true"
+                android:ellipsize="end"/>
+        <TextView
+                android:layout_width="80px"
+                android:layout_height="fill_parent"
+                android:id="@+id/lblKaoHeChaXun_JieGuoView_Name" android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblKaoHeChaXun_JieGuoView_Title" android:layout_marginLeft="10px"
+                android:textColor="@color/gray" android:textSize="24px" android:ellipsize="end"
+                android:singleLine="true" android:gravity="center"/>
+        <TextView
+                android:layout_width="150px"
+                android:layout_height="fill_parent"
+                android:id="@+id/lblKaoHeChaXun_JieGuoView_Date" android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblKaoHeChaXun_JieGuoView_Name" android:layout_marginLeft="10px"
+                android:textSize="24px" android:gravity="center"/>
+        <ImageView
+                android:layout_width="27px"
+                android:layout_height="fill_parent"
+                android:id="@+id/imgKaoHeChaXun_JieGuoView_Detail" android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblKaoHeChaXun_JieGuoView_Date" android:scaleType="fitCenter"
+                android:src="@drawable/rightarrowicon" android:layout_alignParentRight="true"
+                android:layout_marginRight="25px" android:layout_marginLeft="10px"/>
+    </RelativeLayout>
+</RelativeLayout>
+

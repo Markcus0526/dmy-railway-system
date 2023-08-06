@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/rectgrayrect_layout" android:id="@+id/parent_layout">
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80px">
+        <TextView
+                android:layout_width="160px"
+                android:layout_height="fill_parent"
+                android:id="@+id/lblCheDui" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize" android:singleLine="true"
+                android:ellipsize="end" android:background="@drawable/rectgrayrect_layout" android:gravity="center"/>
+        <TextView
+                android:layout_width="160px"
+                android:layout_height="fill_parent"
+                android:id="@+id/lblBanZu" android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblCheDui" android:background="@drawable/rectgrayrect_layout"
+                android:textColor="@color/gray" android:textSize="24px" android:ellipsize="end"
+                android:singleLine="true" android:gravity="center"/>
+        <TextView
+                android:layout_width="120px"
+                android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                android:id="@+id/lblOne" android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblBanZu"
+                android:textSize="24px" android:gravity="center"/>
+        <TextView
+                android:layout_width="200px"
+                android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                android:id="@+id/lblTwo" android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblOne"
+                android:textSize="24px" android:gravity="center"/>
+        <TextView
+                android:layout_width="200px"
+                android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                android:id="@+id/lblThree" android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblTwo"
+                android:textSize="24px" android:gravity="center"/>
+        <TextView
+                android:layout_width="180px"
+                android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                android:id="@+id/lblFour" android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblThree"
+                android:textSize="24px" android:gravity="center"/>
+        <TextView
+                android:layout_width="180px"
+                android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                android:id="@+id/lblFive" android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblFour"
+                android:textSize="24px" android:gravity="center"/>
+        <TextView
+                android:layout_width="180px"
+                android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                android:id="@+id/lblSix" android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblFive"
+                android:textSize="24px" android:gravity="center"/>
+        <TextView
+                android:layout_width="180px"
+                android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                android:id="@+id/lblSeven" android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblSix"
+                android:textSize="24px" android:gravity="center"/>
+        <TextView
+                android:layout_width="180px"
+                android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                android:id="@+id/lblEight" android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblSeven"
+                android:textSize="24px" android:gravity="center"/>
+        <TextView
+                android:layout_width="180px"
+                android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                android:id="@+id/lblLeiJi" android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblEight"
+                android:textSize="24px" android:gravity="center"/>
+    </RelativeLayout>
+</RelativeLayout>
+

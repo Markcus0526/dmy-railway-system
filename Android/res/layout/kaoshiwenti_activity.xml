@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white" android:id="@+id/rlKaoShiWenTiBack">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="95px" android:background="@drawable/bluebutton" android:id="@+id/rlTop">
+        <TextView
+                android:layout_width="450px"
+                android:layout_height="50px"
+                android:id="@+id/lblKaoShiWenTi_Title" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"
+                android:gravity="center_vertical|center_horizontal"/>
+        <ImageView
+                android:layout_width="52px"
+                android:layout_height="52px"
+                android:id="@+id/imgKaoShiWenTi_Back" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px" android:scaleType="fitCenter" android:src="@drawable/leftarrowicon"/>
+    </RelativeLayout>
+    <TextView
+            android:layout_width="175px"
+            android:layout_height="60px"
+            android:text="@string/shengxiashijian"
+            android:id="@+id/lblKaoShiWenTi_ShengXiShiJian" android:layout_below="@+id/rlTop" android:layout_alignParentRight="true"
+            android:layout_marginRight="200px" android:layout_marginTop="30px"
+            android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize" android:gravity="center"/>
+    <TextView
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblKaoShiWenTi_ShengXiaShiJianVal" android:layout_alignTop="@+id/lblKaoShiWenTi_ShengXiShiJian"
+            android:layout_alignParentRight="true" android:layout_alignBottom="@+id/lblKaoShiWenTi_ShengXiShiJian"
+            android:layout_marginRight="40px" android:gravity="center_vertical|left" android:textColor="@color/gray"
+            android:textSize="@dimen/EditTextFontSize"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_below="@+id/lblKaoShiWenTi_ShengXiShiJian"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="40px" android:layout_marginTop="10px"
+            android:layout_marginRight="40px"
+            android:id="@+id/lblKaoShiWenTi_Problem" android:textSize="32px" android:gravity="center_vertical"
+            >
+    </TextView>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/lblKaoShiWenTi_Problem"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="40px" android:layout_marginTop="10px"
+            android:layout_marginRight="40px" android:layout_marginBottom="100px"
+            android:id="@+id/scvKaoShiWenTi_WenTiData">
+    </ScrollView>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80px" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+        <Button
+                android:layout_width="358px"
+                android:layout_height="fill_parent"
+                android:text="@string/shangyiti"
+                android:id="@+id/btnKaoShiWenTi_ShangYiTi" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                android:textColor="@color/gray" android:textSize="@dimen/ButtonFontSize"
+                android:background="@drawable/rectgrayrect_layout" android:layout_marginLeft="1px"
+                android:layout_marginBottom="1px" android:visibility="invisible"/>
+        <Button
+                android:layout_width="358px"
+                android:layout_height="fill_parent"
+                android:text="@string/xiayiti"
+                android:id="@+id/btnKaoShiWenTi_XiaYiTi" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+                android:background="@drawable/rectbluerect_layout" android:textColor="@color/gray"
+                android:textSize="@dimen/ButtonFontSize" android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"/>
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/white" android:id="@+id/rlKaoShiItemViewBack" android:padding="2px">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90px" android:background="@drawable/rectgrayrect_layout">
+        <TextView
+                android:layout_width="430px"
+                android:layout_height="fill_parent"
+                android:id="@+id/lblKaoShiItemView_WenTi" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/lblKaoShiItemView_WenTiShu" android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblKaoShiItemView_WenTi" android:textSize="@dimen/EditTextFontSize"
+                android:textColor="@color/gray" android:gravity="center" android:layout_marginRight="40px"/>
+    </RelativeLayout>
+</RelativeLayout>
+

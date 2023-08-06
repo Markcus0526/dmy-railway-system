@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 21, 19.25" name="TieluDB">
+  <DataContextMoniker Name="/TieluDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="82e37fda-27ae-4f39-b0ec-5d3de3dbceb7" absoluteBounds="6.75, 0.75, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_checkinfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5b514560-fe5b-40a4-ac0c-b7ebdf38c92b" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="27a1f588-80ec-4fa5-819b-d650c6f839e7" absoluteBounds="0.625, 8.125, 2, 4.8188806152343755">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_checklog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9307cf5f-a97e-45ce-becb-4d6293ee9c43" absoluteBounds="0.64, 8.585, 1.9700000000000002, 4.258880615234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="171cce93-1368-47fd-a42c-37fa9bfd6561" absoluteBounds="3.75, 6.75, 2, 3.6727624511718755">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_contact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bf3086a4-574f-42e6-8725-f7128974829d" absoluteBounds="3.765, 7.21, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0fe910c5-5493-4229-bd52-8b98b346129c" absoluteBounds="6.875, 4.125, 2, 1.3805261230468746">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_crewrole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8edd77c-42fa-4915-8b7a-a011c12ce137" absoluteBounds="6.89, 4.585, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f0979dbb-bab7-49f6-97bd-026a30fc1fe4" absoluteBounds="7.125, 9.75, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_document" />
+      <nestedChildShapes>
+        <elementListCompartment Id="70efe964-bb0d-410b-a048-bd83ec58591d" absoluteBounds="7.14, 10.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="04178ea1-d3dc-4dd7-b49a-0af584d7732c" absoluteBounds="9.75, 0.75, 2, 2.3356245930989585">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_documentlog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7cb5c06f-7582-4e84-ac75-bdfbf6c6664f" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9eb9f76d-13f3-4f9b-bb14-509df6e90e72" absoluteBounds="9.75, 8.75, 2, 1.5715458170572916">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_dutycrew" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de43107b-aa94-428e-992f-85ea9248d05a" absoluteBounds="9.765, 9.21, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="55271c4f-9e90-4e5e-94df-f99986fb7ee2" absoluteBounds="9.75, 11.75, 2, 2.7176639811197916">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_exam" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e615f543-2875-4a59-b94f-f63e7e3fb868" absoluteBounds="9.765, 12.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a4c82e2-8152-4e7e-a0fb-451070ded42d" absoluteBounds="3.875, 13.625, 2, 3.4817427571614594">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_mail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4c0fc1f-f036-4439-88d9-08623cfebdef" absoluteBounds="3.89, 14.085, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b0ec07ee-9a4c-408b-9646-7e8099159c07" absoluteBounds="12.75, 13.75, 2, 1.9535852050781255">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_railsector" />
+      <nestedChildShapes>
+        <elementListCompartment Id="96b7bc71-a162-4f1a-8867-4d5b87d0e243" absoluteBounds="12.765, 14.21, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f49b2a1c-6931-4f25-9899-679b57d506bd" absoluteBounds="15.75, 0.75, 2, 2.1446048990885416">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_railteam" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8ea117af-de48-47db-b307-9d033cd7bcbb" absoluteBounds="15.765, 1.21, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7db6e2c3-0dc9-4403-b5ef-e9919f642e7e" absoluteBounds="15.75, 3.75, 2, 1.5715458170572916">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_railzone" />
+      <nestedChildShapes>
+        <elementListCompartment Id="788d616f-9c24-4b41-9f91-b6f85e6c8e0d" absoluteBounds="15.765, 4.21, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fd9d7d50-2bb5-42e9-a3ba-5d517152c6c2" absoluteBounds="15.75, 6.75, 2, 2.5266442871093755">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_rule" />
+      <nestedChildShapes>
+        <elementListCompartment Id="35ef0fad-058e-4dd9-aece-201e0bfaccb0" absoluteBounds="15.765, 7.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="733e5edc-cba9-4568-a5ba-500a0814be54" absoluteBounds="6.875, 13.5, 2, 1.9535852050781273">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_slideimg" />
+      <nestedChildShapes>
+        <elementListCompartment Id="01fda7d6-95be-48cc-819a-f32d5e366402" absoluteBounds="6.89, 13.96, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84eed60b-50c7-4da8-baea-74c6f5b98567" absoluteBounds="15.75, 10.75, 2, 1.3805261230468755">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_sysconfig" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb48d283-ba04-4d8b-8bbf-13bd1e06c0da" absoluteBounds="15.765, 11.21, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d1446b02-6076-40c6-b7b4-7203b89311af" absoluteBounds="15.75, 13.75, 2, 2.5266442871093773">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_sysnoticelog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ef93e65-031f-47aa-ae48-22f08a02b382" absoluteBounds="15.765, 14.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3d1f61b0-acb2-4449-96f7-414f2b2bbef3" absoluteBounds="9.875, 14.75, 2, 3.4817427571614594">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_task" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9ef33a0a-55ae-459f-9bd9-597749e0a63f" absoluteBounds="9.89, 15.21, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fe94fa81-ece3-46d6-9a2e-f5c6d2cf2064" absoluteBounds="12.875, 16.625, 2, 2.3356245930989594">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_taskstatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd553ef2-5761-447d-84cd-0d9a29b776dc" absoluteBounds="12.89, 17.085, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5214d5a3-ebd9-4e3b-abb0-0378f9cb3e31" absoluteBounds="18.75, 0.75, 2, 1.9535852050781251">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_trainno" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4ae9e962-cc9e-42c3-b103-576f6573587a" absoluteBounds="18.765, 1.21, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="38859b56-b0c8-474a-baac-00aade9c8847" absoluteBounds="0.875, 2.75, 2, 5.0099003092447907">
+      <DataClassMoniker Name="/TieluDBDataContext/templog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9bd3f62c-a1cf-4625-9bf2-dd1662a490f5" absoluteBounds="0.89000000000000012, 3.21, 1.9700000000000002, 4.4499003092447911" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cfdd686e-d51b-4e63-a07d-4ec88063f1c9" absoluteBounds="13, 4.75, 2, 2.1446048990885416">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_maillog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c67b91a8-9b08-495d-af31-912d45f8d17c" absoluteBounds="13.015, 5.21, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="59de3b50-85e3-4f1a-a542-7ec334354dcf" absoluteBounds="10, 4.75, 2, 2.7176639811197916">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_duty" />
+      <nestedChildShapes>
+        <elementListCompartment Id="348f188b-b24f-4c24-990e-99b111a3c959" absoluteBounds="10.015, 5.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8fe65a4e-9b7f-4c6d-9d05-3c77f33911bc" absoluteBounds="12.5, 1, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_exambook" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e633db3e-71bf-462b-8d13-0cd8485fef50" absoluteBounds="12.515, 1.46, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="35676cdd-4a26-474f-98bd-a42ca9a95e89" absoluteBounds="3.875, 0.875, 2, 5.3919396972656246">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c3b0b6c8-7e0f-49bb-aaab-6b461038e5bb" absoluteBounds="3.8899999999999997, 1.335, 1.9700000000000002, 4.831939697265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b1687c8b-dd55-462c-acb1-73eccf2584d6" absoluteBounds="12.75, 10.875, 2, 2.1446048990885416">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_railroute" />
+      <nestedChildShapes>
+        <elementListCompartment Id="98c294b9-6073-4a0a-81da-3604df4b04d4" absoluteBounds="12.765, 11.335, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dbf34515-718d-4106-a23d-6091cc934ef3" absoluteBounds="7, 16.25, 2, 1.9535852050781251">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_taskmessage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="750bbd98-e94f-4c82-8b82-1bdff567096a" absoluteBounds="7.015, 16.71, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4cf04b56-50c0-4fe2-a845-22be82639b21" absoluteBounds="4.125, 10.625, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_examresult" />
+      <nestedChildShapes>
+        <elementListCompartment Id="93b99e68-5a78-48c7-8e0c-dbe136169d06" absoluteBounds="4.1400000000000006, 11.085, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="327ee1e3-a3ed-4b35-81b6-f479b9b2cfd5" absoluteBounds="1.125, 0.75, 2, 1.7625655110677081">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_adminrole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4b09b992-5a0c-4c62-924e-210df62aaa37" absoluteBounds="1.1400000000000001, 1.21, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a70c2774-4ea3-46f4-97a9-8d86722a3e1a" absoluteBounds="6.875, 6.375, 2, 2.3356245930989585">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_crewtransfer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e68a51e-2e00-42f0-a87f-b7adaacb2d14" absoluteBounds="6.89, 6.835, 1.9700000000000002, 1.7756245930989585" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1fb81810-3f6d-49b9-a597-0860181b7736" absoluteBounds="1.375, 13.5, 2, 2.3356245930989585">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_sptransfer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="000ae811-c539-4da0-84c7-61c717c3f15a" absoluteBounds="1.3900000000000001, 13.96, 1.9700000000000002, 1.7756245930989585" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="95b85915-8117-44bb-b58a-1e5d7bfa0fdc" absoluteBounds="15.875, 16.875, 2, 2.1446048990885416">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_traingroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc353a5b-c8dd-48bd-a007-200605b5e4b2" absoluteBounds="15.89, 17.335, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d830a4c4-398e-4b4b-9305-a670fc44508c" absoluteBounds="12.875, 7.5, 2, 2.3356245930989585">
+      <DataClassMoniker Name="/TieluDBDataContext/tbl_opinion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d8c43c1-88d4-4cb4-b611-2379373c75de" absoluteBounds="12.89, 7.9600000000000009, 1.9700000000000002, 1.7756245930989585" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white" android:id="@+id/rlKaoShiXiangXiBack">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="95px" android:background="@drawable/bluebutton" android:id="@+id/rlTop">
+        <TextView
+                android:layout_width="260px"
+                android:layout_height="50px"
+                android:text="@string/zaixiankaoshi"
+                android:id="@+id/lblKaoShiXiangXi_Title" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"
+                android:gravity="center_vertical|center_horizontal"/>
+        <ImageView
+                android:layout_width="52px"
+                android:layout_height="52px"
+                android:id="@+id/imgKaoShiXiangXi_Back" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px" android:scaleType="fitCenter" android:src="@drawable/leftarrowicon"/>
+    </RelativeLayout>
+    <TextView
+            android:layout_width="200px"
+            android:layout_height="60px"
+            android:text="@string/kaoshibiaoti"
+            android:id="@+id/lblKaoShiXiangXi_BiaoTi" android:layout_below="@+id/rlTop" android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40px" android:layout_marginTop="100px" android:gravity="center_vertical|left"
+            android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblKaoShiXiangXi_BiaoTiVal" android:layout_alignTop="@+id/lblKaoShiXiangXi_BiaoTi"
+            android:layout_toRightOf="@+id/lblKaoShiXiangXi_BiaoTi"
+            android:layout_alignBottom="@+id/lblKaoShiXiangXi_BiaoTi" android:layout_alignParentRight="true"
+            android:layout_marginRight="40px" android:textColor="@color/gray"
+            android:textSize="@dimen/EditTextFontSize" android:singleLine="true" android:ellipsize="end"
+            android:gravity="center_vertical|left"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:text="@string/kaoshishijian"
+            android:id="@+id/lblKaoShiXiangXi_ShiJian" android:layout_below="@+id/lblKaoShiXiangXi_BiaoTi"
+            android:layout_alignLeft="@+id/lblKaoShiXiangXi_BiaoTi" android:layout_marginTop="30px"
+            android:layout_toLeftOf="@+id/lblKaoShiXiangXi_BiaoTiVal" android:gravity="center_vertical|left"
+            android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblKaoShiXiangXi_ShiJianVal" android:layout_alignTop="@+id/lblKaoShiXiangXi_ShiJian"
+            android:layout_toRightOf="@+id/lblKaoShiXiangXi_ShiJian"
+            android:layout_alignBottom="@+id/lblKaoShiXiangXi_ShiJian"
+            android:layout_alignRight="@+id/lblKaoShiXiangXi_BiaoTiVal" android:textColor="@color/gray"
+            android:textSize="@dimen/EditTextFontSize" android:gravity="center_vertical|left" android:ellipsize="end"
+            android:singleLine="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:text="@string/kaotishu"
+            android:id="@+id/lblKaoShiXiangXi_KaoTiShu" android:layout_below="@+id/lblKaoShiXiangXi_ShiJian"
+            android:layout_alignLeft="@+id/lblKaoShiXiangXi_ShiJian" android:layout_marginTop="30px"
+            android:layout_toLeftOf="@+id/lblKaoShiXiangXi_ShiJianVal" android:gravity="center_vertical|left"
+            android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblKaoShiXiangXi_KaoTiShuVal" android:layout_alignTop="@+id/lblKaoShiXiangXi_KaoTiShu"
+            android:layout_toRightOf="@+id/lblKaoShiXiangXi_KaoTiShu"
+            android:layout_alignBottom="@+id/lblKaoShiXiangXi_KaoTiShu"
+            android:layout_alignRight="@+id/lblKaoShiXiangXi_ShiJianVal" android:textColor="@color/gray"
+            android:textSize="@dimen/EditTextFontSize" android:gravity="center_vertical|left" android:ellipsize="end"
+            android:singleLine="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:text="@string/kaotineirong"
+            android:id="@+id/lblKaoShiXiangXi_NeiRong" android:layout_below="@+id/lblKaoShiXiangXi_KaoTiShu"
+            android:layout_alignLeft="@+id/lblKaoShiXiangXi_KaoTiShu" android:layout_marginTop="30px"
+            android:layout_toLeftOf="@+id/lblKaoShiXiangXi_KaoTiShuVal" android:gravity="center_vertical|left"
+            android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="500px"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/txtKaoShiXiangXi_NeiRongVal" android:layout_below="@+id/lblKaoShiXiangXi_NeiRong"
+            android:layout_alignLeft="@+id/lblKaoShiXiangXi_NeiRong"
+            android:layout_alignRight="@+id/lblKaoShiXiangXi_KaoTiShuVal"
+            android:background="@android:color/transparent" android:gravity="left|top" android:textColor="@color/gray"
+            android:textSize="@dimen/EditTextFontSize" android:lineSpacingMultiplier="1.2"
+            android:padding="10px" android:enabled="false"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:text="@string/kaishikaoshi"
+            android:id="@+id/btnKaoShiXiangXi_KaiShi" android:layout_below="@+id/txtKaoShiXiangXi_NeiRongVal"
+            android:layout_marginTop="50px"
+            android:layout_alignRight="@+id/lblKaoShiXiangXi_KaoTiShuVal"
+            android:layout_alignLeft="@+id/txtKaoShiXiangXi_NeiRongVal"
+            android:background="@drawable/roundbluerect_layout" android:textColor="@color/lightblue"
+            android:textSize="@dimen/ButtonFontSize"/>
+</RelativeLayout>
+

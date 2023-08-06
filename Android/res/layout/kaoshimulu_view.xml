@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/white" android:id="@+id/rlKaoShiMuLuViewBack" android:padding="2px">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="290px" android:background="@drawable/rectgraywhite_layout">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="60px"
+                android:text="@string/kaoti"
+                android:id="@+id/lblKaoShiMuLuView_WenTi" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px" android:layout_marginRight="40px" android:gravity="center_vertical|left"
+                android:layout_marginTop="10px" android:textColor="@color/gray"
+                android:textSize="@dimen/EditTextFontSize" android:singleLine="true" android:ellipsize="middle"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/kaoshishijian"
+                android:id="@+id/lblKaoShiMuLuView_ShiJian" android:layout_below="@+id/lblKaoShiMuLuView_WenTi"
+                android:layout_alignLeft="@+id/lblKaoShiMuLuView_WenTi"
+                android:layout_alignRight="@+id/lblKaoShiMuLuView_WenTi" android:layout_marginTop="10px"
+                android:gravity="center_vertical|left" android:textColor="@color/gray"
+                android:textSize="@dimen/EditTextFontSize" android:singleLine="true" android:ellipsize="middle"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/zhengquetishu"
+                android:id="@+id/lblKaoShiMuLuView_ZhengQue" android:layout_below="@+id/lblKaoShiMuLuView_ShiJian"
+                android:layout_alignLeft="@+id/lblKaoShiMuLuView_ShiJian"
+                android:layout_alignRight="@+id/lblKaoShiMuLuView_ShiJian" android:ellipsize="middle"
+                android:gravity="center_vertical|left" android:layout_marginTop="10px" android:textColor="@color/gray"
+                android:textSize="@dimen/EditTextFontSize"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="@string/wodechengji"
+                android:id="@+id/lblKaoShiMuLuView_WodeChengJi" android:layout_below="@+id/lblKaoShiMuLuView_ZhengQue"
+                android:layout_alignLeft="@+id/lblKaoShiMuLuView_ZhengQue"
+                android:layout_alignRight="@+id/lblKaoShiMuLuView_ZhengQue" android:textSize="@dimen/EditTextFontSize"
+                android:textColor="@color/gray" android:singleLine="true" android:gravity="center_vertical|left"
+                android:layout_marginTop="10px"/>
+    </RelativeLayout>
+</RelativeLayout>
+

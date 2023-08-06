@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/white" android:id="@+id/rlViewBack" android:padding="2px">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="160px" android:background="@drawable/rectgraywhite_layout">
+        <ImageView
+                android:layout_width="24px"
+                android:layout_height="24px"
+                android:id="@+id/imgBlueDot" android:layout_marginTop="30px" android:layout_marginLeft="25px"
+                android:scaleType="fitCenter" android:src="@drawable/bluedot"/>
+        <TextView
+                android:layout_width="280px"
+                android:layout_height="40px"
+                android:id="@+id/lblTitle" android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imgBlueDot" android:gravity="center_vertical|left"
+                android:layout_marginTop="22px" android:layout_marginLeft="20px" android:textColor="@color/gray"
+                android:textSize="@dimen/EditTextFontSize" android:singleLine="true" android:ellipsize="end"/>
+        <TextView
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblDate" android:layout_alignTop="@+id/lblTitle"
+                android:layout_alignParentRight="true" android:layout_alignBottom="@+id/lblTitle"
+                android:layout_marginRight="30px" android:gravity="center_vertical|right"
+                android:textSize="@dimen/EditTextFontSize" android:textColor="@color/gray"/>
+        <ImageView
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:id="@+id/imgCheck" android:layout_below="@+id/imgBlueDot"
+                android:layout_alignParentLeft="true" android:layout_marginLeft="22px" android:layout_marginTop="15px"
+                android:scaleType="fitCenter" android:src="@drawable/uncheck"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="70px"
+                android:id="@+id/lblData" android:layout_alignTop="@+id/imgCheck"
+                android:layout_alignLeft="@+id/lblTitle" android:layout_alignRight="@+id/lblDate"
+                android:gravity="left|top" android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"
+                android:ellipsize="end"
+                />
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/lblSender" android:layout_alignTop="@+id/lblTitle"
+                android:layout_toRightOf="@+id/lblTitle" android:layout_alignBottom="@+id/lblTitle"
+                android:layout_toLeftOf="@+id/lblDate" android:gravity="center_vertical|right" android:textColor="@color/gray"
+                android:textSize="@dimen/EditTextFontSize" android:layout_marginLeft="20px"
+                android:layout_marginRight="20px" android:ellipsize="end" android:singleLine="true"
+                />
+    </RelativeLayout>
+</RelativeLayout>
+

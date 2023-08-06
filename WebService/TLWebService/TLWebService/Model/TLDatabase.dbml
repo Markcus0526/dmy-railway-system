@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Tielu" Class="TLDatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=59.44.198.134;Initial Catalog=Tielu;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TieluConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_adminrole" Member="tbl_adminroles">
+    <Type Name="tbl_adminrole">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="rolename" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="role" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="teamid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.templog" Member="templogs">
+    <Type Name="templog">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="logtype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="infoid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="teamid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="groupid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="crewid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="crewrelid" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="checkerid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="checktime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="dutytime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="contents" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="imgurl" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="routid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="checklevel" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="checkexecparent" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="trainno" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="checkername" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="receivepart" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="recievename" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="createid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_checkinfo" Member="tbl_checkinfos">
+    <Type Name="tbl_checkinfo">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="checktype" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="checkno" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="chkpoint" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="relpoint" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="category" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="checkinfo" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="sortid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_checklog" Member="tbl_checklogs">
+    <Type Name="tbl_checklog">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="logtype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="infoid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="teamid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="groupid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="crewid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="crewrelid" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="checkerid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="checktime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="dutytime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="contents" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="imgurl" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="routid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="checklevel" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="checkexecparent" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="trainno" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="checkername" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="receivepart" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="recievename" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_contact" Member="tbl_contacts">
+    <Type Name="tbl_contact">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="contactname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="partname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="contactkind" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="groupname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="trainno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="phonenum1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="phonenum2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="shortpnum1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="shortpnum2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="note" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="rolename" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="rolekind" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="linenum" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_crewrole" Member="tbl_crewroles">
+    <Type Name="tbl_crewrole">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="rolename" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="sortid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_crewtransfer" Member="tbl_crewtransfers">
+    <Type Name="tbl_crewtransfer">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="crewid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="oldteamid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="newteamid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="newgroupid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="transfertime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_document" Member="tbl_documents">
+    <Type Name="tbl_document">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sender" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="sendpart" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="receiver" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="receiverange" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="docno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="contents" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="attachname" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="attachpath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="attachsize" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_documentlog" Member="tbl_documentlogs">
+    <Type Name="tbl_documentlog">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="docid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="acttype" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="execnote" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="receiver" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_duty" Member="tbl_duties">
+    <Type Name="tbl_duty">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="starttime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="endtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="teamid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="routeid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="groupid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="trainno" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="forbide" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_dutycrew" Member="tbl_dutycrews">
+    <Type Name="tbl_dutycrew">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="dutyid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="crewid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_exam" Member="tbl_exams">
+    <Type Name="tbl_exam">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="examkind" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="teamid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="examtype" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="question" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="answer" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="score" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_exambook" Member="tbl_exambooks">
+    <Type Name="tbl_exambook">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="examkind" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="teamid" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="examtime" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="examids" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="contents" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_examresult" Member="tbl_examresults">
+    <Type Name="tbl_examresult">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="exambookid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="score" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="examresult" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="examsecond" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="participtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_mail" Member="tbl_mails">
+    <Type Name="tbl_mail">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="mailtype" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="senderid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="receiver" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="contents" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="attachname" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="attachpath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="attachsize" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="isread" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="sendtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="readtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_maillog" Member="tbl_maillogs">
+    <Type Name="tbl_maillog">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="mailid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="receiverid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="readtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="receipt" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="receipttime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_opinion" Member="tbl_opinions">
+    <Type Name="tbl_opinion">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="senderid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="receivepartid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="contents" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="feedback" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_railroute" Member="tbl_railroutes">
+    <Type Name="tbl_railroute">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="zoneid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="teamid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="routename" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="sortid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_railsector" Member="tbl_railsectors">
+    <Type Name="tbl_railsector">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="zoneid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="sectorname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="sortid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_railteam" Member="tbl_railteams">
+    <Type Name="tbl_railteam">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="zoneid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="teamname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="sortid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="routeids" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_railzone" Member="tbl_railzones">
+    <Type Name="tbl_railzone">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="zonename" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_rule" Member="tbl_rules">
+    <Type Name="tbl_rule">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="sortid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="contents" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="imgurl" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="pdfpath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="pdfname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pdfsize" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_slideimg" Member="tbl_slideimgs">
+    <Type Name="tbl_slideimg">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="imgpath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="sortid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_sptransfer" Member="tbl_sptransfers">
+    <Type Name="tbl_sptransfer">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="oldteamid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="crewid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="contents" Type="System.String" DbType="NChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="transfertime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="state" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_sysconfig" Member="tbl_sysconfigs">
+    <Type Name="tbl_sysconfig">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="notice" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="backimg" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_sysnoticelog" Member="tbl_sysnoticelogs">
+    <Type Name="tbl_sysnoticelog">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="logtype" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="readerid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="readtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="noticetime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="checklogid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_task" Member="tbl_tasks">
+    <Type Name="tbl_task">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="sendpart" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="senderid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="receiver" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="starttime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="endtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="contents" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="attachname" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="attachpath" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="attachsize" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="publishtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_taskmessage" Member="tbl_taskmessages">
+    <Type Name="tbl_taskmessage">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="taskid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="contents" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_taskstatus" Member="tbl_taskstatus">
+    <Type Name="tbl_taskstatus">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="taskid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="receiverid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="accepttime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="finishtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_traingroup" Member="tbl_traingroups">
+    <Type Name="tbl_traingroup">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="teamid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="groupname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="sortid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dailygroup" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_trainno" Member="tbl_trainnos">
+    <Type Name="tbl_trainno">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="routeid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="trainno" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="sortid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_user" Member="tbl_users">
+    <Type Name="tbl_user">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userkind" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="realname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="birthday" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="gender" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="imgurl" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="phonenum" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="mailaddr" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="qqnum" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="notifymail" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="crewrole" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="crewno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="crewgroupid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="exectype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="execrole" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="execparentid" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="adminrole" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="opinionmanage" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="teammanage" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="policyface" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

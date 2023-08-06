@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/white" android:id="@+id/rlRenWuGuanLiItemBack">
+    <RelativeLayout
+            android:layout_width="630px"
+            android:layout_height="140px" android:background="@color/white" android:id="@+id/relativeLayout1">
+        <TextView
+                android:layout_width="160px"
+                android:layout_height="40px"
+                android:text="@string/renwumingcheng"
+                android:id="@+id/lblRenWuGuanLiItem_MingCheng" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px" android:layout_marginTop="30px" android:textColor="@color/gray"
+                android:textSize="@dimen/EditTextFontSize" android:gravity="center_vertical|left"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblRenWuGuanLiItem_MingChengVal" android:layout_alignTop="@+id/lblRenWuGuanLiItem_MingCheng"
+                android:layout_toRightOf="@+id/lblRenWuGuanLiItem_MingCheng"
+                android:layout_alignBottom="@+id/lblRenWuGuanLiItem_MingCheng" android:layout_alignParentRight="true"
+                android:gravity="center_vertical|left" android:layout_marginRight="45px"
+                android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize" android:singleLine="true"
+                android:ellipsize="end"/>
+        <TextView
+                android:layout_width="250px"
+                android:layout_height="40px"
+                android:text="@string/zerenren"
+                android:id="@+id/lblRenWuGuanLiItem_ZeRenRen" android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/lblRenWuGuanLiItem_MingCheng" android:layout_marginBottom="20px"
+                android:gravity="center_vertical|left" android:textColor="@color/gray"
+                android:textSize="@dimen/EditTextFontSize"/>
+        <TextView
+                android:layout_width="275px"
+                android:layout_height="wrap_content"
+                android:text="@string/shifouwancheng"
+                android:id="@+id/lblRenWuGuanLiItem_WanCheng" android:layout_alignBottom="@+id/lblRenWuGuanLiItem_ZeRenRen"
+                android:layout_alignRight="@+id/lblRenWuGuanLiItem_MingChengVal"
+                android:layout_alignTop="@+id/lblRenWuGuanLiItem_ZeRenRen" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+    </RelativeLayout>
+</RelativeLayout>
+

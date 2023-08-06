@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="E:\47_TieLu\Result\WebService" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="WebService" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="10/02/2014 22:47:01" />
+    <file relUrl="JSON/Newtonsoft.Json.dll" publishTime="10/02/2014 22:47:01" />
+    <file relUrl="Web.config" publishTime="01/20/2015 01:39:14" />
+    <file relUrl="Service.svc" publishTime="10/02/2014 22:47:01" />
+    <file relUrl="bin/TLWebService.pdb" publishTime="03/27/2015 21:44:07" />
+    <file relUrl="bin/TLWebService.dll" publishTime="03/27/2015 21:44:07" />
+    <file relUrl="ConnStrings.config" publishTime="01/29/2015 04:44:33" />
+  </publishProfile>
+</publishData>

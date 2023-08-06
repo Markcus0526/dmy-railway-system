@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white" android:id="@+id/rlKaoShiMuLuBack">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="95px" android:background="@drawable/bluebutton" android:id="@+id/rlTop">
+        <TextView
+                android:layout_width="260px"
+                android:layout_height="50px"
+                android:text="@string/kaoshilishi"
+                android:id="@+id/lblKaoShiMuLu_Title" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"
+                android:gravity="center_vertical|center_horizontal"/>
+        <ImageView
+                android:layout_width="52px"
+                android:layout_height="52px"
+                android:id="@+id/imgKaoShiMuLu_Back" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px" android:scaleType="fitCenter" android:src="@drawable/leftarrowicon"/>
+    </RelativeLayout>
+    <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/listKaoShiMuLu_Data" android:layout_below="@+id/rlTop"
+            android:layout_above="@+id/relativeLayout2"/>
+    <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="100px" android:layout_alignParentBottom="true">
+        <RelativeLayout
+                android:layout_width="240px"
+                android:layout_height="fill_parent" android:background="@drawable/graybutton"
+                android:id="@+id/rlKaoShiMuLu_DuanJiKaoShi">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/duanjikaoshi"
+                    android:id="@+id/lblKaoShiMuLu_DuanJiKaoShi" android:layout_centerVertical="true"
+                    android:textSize="@dimen/EditTextFontSize" android:textColor="@color/gray"
+                    android:gravity="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="240px"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/rlKaoShiMuLu_KaoShiMuLu" android:background="@drawable/graybutton"
+                android:layout_centerInParent="true" android:id="@+id/rlKaoShiMuLu_CheDuiKaoShi">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/cheduikaoshi"
+                    android:id="@+id/lblKaoShiMuLu_CheDuiKaoShi" android:layout_centerVertical="true"
+                    android:gravity="center" android:textColor="@color/gray"
+                    android:textSize="@dimen/EditTextFontSize"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="240px"
+                android:layout_height="fill_parent" android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" android:background="@drawable/graybutton"
+                android:id="@+id/rlKaoShiMuLu_KaoShiFenXi">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/kaoshilishi"
+                    android:id="@+id/lblKaiHeLuRu_KaoShiFenXi" android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textSize="@dimen/EditTextFontSize" android:textColor="@color/lightblue"
+                    />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

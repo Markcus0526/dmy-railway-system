@@ -1,0 +1,45 @@
+2014/12/22 18:33:45 - GetKaoShiWenTiList - Specified cast is not valid.
+2014/12/22 21:02:22 - GetKaoShiWenTiList - Specified cast is not valid.
+2014/12/22 21:20:15 - GetKaoShiLiShiList - Sequence operators not supported for type 'System.String'.
+2014/12/22 21:21:27 - GetKaoShiLiShiList - Sequence operators not supported for type 'System.String'.
+2014/12/22 21:21:42 - GetKaoShiLiShiList - Sequence operators not supported for type 'System.String'.
+2014/12/22 21:21:59 - GetKaoShiLiShiList - Sequence operators not supported for type 'System.String'.
+2014/12/22 21:27:04 - GetKaoShiLiShiList - Could not translate expression 'value(TLWebService.Model.TLModel).GetProblemCount(<>h__TransparentIdentifier43.n.uid)' into SQL and could not treat it as a local expression.
+2014/12/22 21:27:24 - GetKaoShiLiShiList - Could not translate expression 'value(TLWebService.Model.TLModel).GetProblemCount(<>h__TransparentIdentifier43.n.uid)' into SQL and could not treat it as a local expression.
+2014/12/22 21:27:25 - GetKaoShiLiShiList - Could not translate expression 'value(TLWebService.Model.TLModel).GetProblemCount(<>h__TransparentIdentifier43.n.uid)' into SQL and could not treat it as a local expression.
+2014/12/22 21:28:02 - GetKaoShiLiShiList - Could not translate expression 'value(TLWebService.Model.TLModel).GetProblemCount(<>h__TransparentIdentifier43.n.uid)' into SQL and could not treat it as a local expression.
+2014/12/22 21:29:02 - GetKaoShiLiShiList - Sequence operators not supported for type 'System.String'.
+2014/12/22 21:29:17 - GetKaoShiLiShiList - Sequence operators not supported for type 'System.String'.
+2014/12/22 21:29:35 - GetKaoShiLiShiList - Could not translate expression 'value(TLWebService.Model.TLModel).GetProblemCount(<>h__TransparentIdentifier43.n.uid)' into SQL and could not treat it as a local expression.
+2014/12/22 21:30:19 - GetKaoShiLiShiList - Could not translate expression 'value(TLWebService.Model.TLModel).GetProblemCount(<>h__TransparentIdentifier43.n.uid)' into SQL and could not treat it as a local expression.
+2014/12/22 21:30:31 - GetKaoShiLiShiList - Could not translate expression 'value(TLWebService.Model.TLModel).GetProblemCount(<>h__TransparentIdentifier43.n.uid)' into SQL and could not treat it as a local expression.
+2014/12/22 21:30:43 - GetKaoShiLiShiList - Could not translate expression 'value(TLWebService.Model.TLModel).GetProblemCount(<>h__TransparentIdentifier43.n.uid)' into SQL and could not treat it as a local expression.
+2014/12/22 21:30:48 - GetKaoShiLiShiList - Could not translate expression 'value(TLWebService.Model.TLModel).GetProblemCount(<>h__TransparentIdentifier43.n.uid)' into SQL and could not treat it as a local expression.
+2014/12/22 21:32:02 - GetKaoShiLiShiList - Could not translate expression 'value(TLWebService.Model.TLModel).GetProblemCount(<>h__TransparentIdentifier43.n.uid)' into SQL and could not treat it as a local expression.
+2014/12/22 21:32:26 - GetKaoShiLiShiList - Could not translate expression 'value(TLWebService.Model.TLModel).GetProblemCount(<>h__TransparentIdentifier43.n.uid)' into SQL and could not treat it as a local expression.
+2014/12/22 21:32:51 - GetKaoShiLiShiList - Could not translate expression 'value(TLWebService.Model.TLModel).GetProblemCount(<>h__TransparentIdentifier43.n.uid)' into SQL and could not treat it as a local expression.
+2014/12/22 21:32:52 - GetKaoShiLiShiList - Could not translate expression 'value(TLWebService.Model.TLModel).GetProblemCount(<>h__TransparentIdentifier43.n.uid)' into SQL and could not treat it as a local expression.
+2014/12/22 21:36:29 - GetKaoShiLiShiList - Could not translate expression 'ToInt64(Convert(<>h__TransparentIdentifier43.m.score))' into SQL and could not treat it as a local expression.
+2014/12/22 21:37:13 - GetKaoShiLiShiList - Could not translate expression 'Parse(<>h__TransparentIdentifier43.m.score.ToString())' into SQL and could not treat it as a local expression.
+2014/12/22 21:37:14 - GetKaoShiLiShiList - Could not translate expression 'Parse(<>h__TransparentIdentifier43.m.score.ToString())' into SQL and could not treat it as a local expression.
+2014/12/22 21:37:15 - GetKaoShiLiShiList - Could not translate expression 'Parse(<>h__TransparentIdentifier43.m.score.ToString())' into SQL and could not treat it as a local expression.
+2014/12/22 21:37:15 - GetKaoShiLiShiList - Could not translate expression 'Parse(<>h__TransparentIdentifier43.m.score.ToString())' into SQL and could not treat it as a local expression.
+2015.01.19 오후 05:53:09 - SetKaoHeItem - 不能将值 NULL 插入列 'checkexecparent'，表 'Tielu.dbo.tbl_checklog'；列不允许有空值。INSERT 失败。
+语句已终止。
+2015.01.19 오후 05:53:34 - SetKaoHeItem - 不能将值 NULL 插入列 'checkexecparent'，表 'Tielu.dbo.tbl_checklog'；列不允许有空值。INSERT 失败。
+语句已终止。
+2015.01.19 오후 05:54:35 - SetKaoHeItem - 不能将值 NULL 插入列 'checkexecparent'，表 'Tielu.dbo.tbl_checklog'；列不允许有空值。INSERT 失败。
+语句已终止。
+2015.01.19 오후 05:56:50 - SetKaoHeItem - SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+2015.01.19 오후 05:56:56 - SetKaoHeItem - SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+2015.01.19 오후 06:03:23 - SetKaoHeItem - 不能将值 NULL 插入列 'checkexecparent'，表 'Tielu.dbo.tbl_checklog'；列不允许有空值。INSERT 失败。
+语句已终止。
+2015.01.20 오전 01:10:59 - SetKaoHeItem - is called!
+2015.01.20 오전 01:10:59 - SetKaoHeItem - Invalid length for a Base-64 char array or string.
+2015.01.20 오전 01:11:00 - SetKaoHeItem - 不能将值 NULL 插入列 'checkexecparent'，表 'Tielu.dbo.tbl_checklog'；列不允许有空值。INSERT 失败。
+语句已终止。
+2015.01.20 오전 01:18:28 - SetKaoHeItem - is called!
+2015.01.20 오전 01:18:28 - SetKaoHeItem - 不能将值 NULL 插入列 'checkername'，表 'Tielu.dbo.tbl_checklog'；列不允许有空值。INSERT 失败。
+语句已终止。
+2015.01.20 오전 01:23:42 - SetKaoHeItem - is called!
+2015.01.20 오전 01:23:42 - SetKaoHeItem - Invalid length for a Base-64 char array or string.

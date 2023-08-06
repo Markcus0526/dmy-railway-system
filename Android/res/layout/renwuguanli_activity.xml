@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white" android:id="@+id/rlRenWuGuanLiBack">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="95px" android:background="@drawable/bluebutton" android:id="@+id/rlTop">
+        <TextView
+                android:layout_width="260px"
+                android:layout_height="50px"
+                android:text="@string/renwuguanli"
+                android:id="@+id/lblRenWuGuanLi_Title" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"
+                android:gravity="center_vertical|center_horizontal"/>
+        <ImageView
+                android:layout_width="52px"
+                android:layout_height="52px"
+                android:id="@+id/imgRenWuGuanLi_Back" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px" android:scaleType="fitCenter" android:src="@drawable/leftarrowicon"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/rlTop"
+            android:layout_alignParentLeft="true" android:layout_above="@+id/relativeLayout2"
+            android:background="@drawable/mainback">
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="80px"
+                android:text="@string/tianjiaxinrenwu"
+                android:id="@+id/btnRenWuGuanLi_Add" android:layout_alignParentTop="true"
+                android:layout_marginTop="30px" android:layout_marginLeft="45px" android:layout_marginRight="45px"
+                android:textColor="@color/lightblue" android:textSize="@dimen/ButtonFontSize"
+                android:background="@drawable/roundbluerect_layout"/>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="700px" android:layout_below="@+id/btnRenWuGuanLi_Add"
+                android:layout_alignLeft="@+id/btnRenWuGuanLi_Add" android:layout_marginTop="40px"
+                android:layout_alignRight="@+id/btnRenWuGuanLi_Add" android:background="@drawable/rectgrayrect_layout"
+                android:id="@+id/relativeLayout3">
+            <RelativeLayout
+                    android:layout_width="630px"
+                    android:layout_height="140px" android:background="@drawable/rectgrayrect_layout"
+                    android:id="@+id/rlLayout1" android:visibility="invisible">
+                <TextView
+                        android:layout_width="160px"
+                        android:layout_height="40px"
+                        android:text="@string/renwumingcheng"
+                        android:id="@+id/lblRenWuGuanLiItem_MingCheng1" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="40px" android:layout_marginTop="30px" android:textColor="@color/gray"
+                        android:textSize="@dimen/EditTextFontSize" android:gravity="center_vertical|left"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblRenWuGuanLiItem_MingChengVal1" android:layout_alignTop="@+id/lblRenWuGuanLiItem_MingCheng1"
+                        android:layout_toRightOf="@+id/lblRenWuGuanLiItem_MingCheng1"
+                        android:layout_alignBottom="@+id/lblRenWuGuanLiItem_MingCheng1" android:layout_alignParentRight="true"
+                        android:gravity="center_vertical|left" android:layout_marginRight="45px"
+                        android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize" android:singleLine="true"
+                        android:ellipsize="end"/>
+                <TextView
+                        android:layout_width="250px"
+                        android:layout_height="40px"
+                        android:id="@+id/lblRenWuGuanLiItem_ZeRenRen1" android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@+id/lblRenWuGuanLiItem_MingCheng1" android:layout_marginBottom="20px"
+                        android:gravity="center_vertical|left" android:textColor="@color/gray"
+                        android:textSize="@dimen/EditTextFontSize" android:singleLine="true" android:ellipsize="end"/>
+                <TextView
+                        android:layout_width="275px"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblRenWuGuanLiItem_WanCheng1" android:layout_alignBottom="@+id/lblRenWuGuanLiItem_ZeRenRen1"
+                        android:layout_alignRight="@+id/lblRenWuGuanLiItem_MingChengVal1"
+                        android:layout_alignTop="@+id/lblRenWuGuanLiItem_ZeRenRen1" android:gravity="center_vertical|left"
+                        android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_width="630px"
+                    android:layout_height="140px" android:background="@drawable/rectgrayrect_layout"
+                    android:id="@+id/rlLayout2" android:layout_below="@+id/rlLayout1" android:visibility="invisible">
+                <TextView
+                        android:layout_width="160px"
+                        android:layout_height="40px"
+                        android:text="@string/renwumingcheng"
+                        android:id="@+id/lblRenWuGuanLiItem_MingCheng2" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="40px" android:layout_marginTop="30px" android:textColor="@color/gray"
+                        android:textSize="@dimen/EditTextFontSize" android:gravity="center_vertical|left"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblRenWuGuanLiItem_MingChengVal2" android:layout_alignTop="@+id/lblRenWuGuanLiItem_MingCheng2"
+                        android:layout_toRightOf="@+id/lblRenWuGuanLiItem_MingCheng2"
+                        android:layout_alignBottom="@+id/lblRenWuGuanLiItem_MingCheng2" android:layout_alignParentRight="true"
+                        android:gravity="center_vertical|left" android:layout_marginRight="45px"
+                        android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize" android:singleLine="true"
+                        android:ellipsize="end"/>
+                <TextView
+                        android:layout_width="250px"
+                        android:layout_height="40px"
+                        android:id="@+id/lblRenWuGuanLiItem_ZeRenRen2" android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@+id/lblRenWuGuanLiItem_MingCheng2" android:layout_marginBottom="20px"
+                        android:gravity="center_vertical|left" android:textColor="@color/gray"
+                        android:textSize="@dimen/EditTextFontSize" android:singleLine="true" android:ellipsize="end"/>
+                <TextView
+                        android:layout_width="275px"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblRenWuGuanLiItem_WanCheng2" android:layout_alignBottom="@+id/lblRenWuGuanLiItem_ZeRenRen2"
+                        android:layout_alignRight="@+id/lblRenWuGuanLiItem_MingChengVal2"
+                        android:layout_alignTop="@+id/lblRenWuGuanLiItem_ZeRenRen2" android:gravity="center_vertical|left"
+                        android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_width="630px"
+                    android:layout_height="140px" android:background="@drawable/rectgrayrect_layout"
+                    android:id="@+id/rlLayout3" android:layout_below="@+id/rlLayout2" android:visibility="invisible">
+                <TextView
+                        android:layout_width="160px"
+                        android:layout_height="40px"
+                        android:text="@string/renwumingcheng"
+                        android:id="@+id/lblRenWuGuanLiItem_MingCheng3" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="40px" android:layout_marginTop="30px" android:textColor="@color/gray"
+                        android:textSize="@dimen/EditTextFontSize" android:gravity="center_vertical|left"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblRenWuGuanLiItem_MingChengVal3" android:layout_alignTop="@+id/lblRenWuGuanLiItem_MingCheng3"
+                        android:layout_toRightOf="@+id/lblRenWuGuanLiItem_MingCheng3"
+                        android:layout_alignBottom="@+id/lblRenWuGuanLiItem_MingCheng3" android:layout_alignParentRight="true"
+                        android:gravity="center_vertical|left" android:layout_marginRight="45px"
+                        android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize" android:singleLine="true"
+                        android:ellipsize="end"/>
+                <TextView
+                        android:layout_width="250px"
+                        android:layout_height="40px"
+                        android:id="@+id/lblRenWuGuanLiItem_ZeRenRen3" android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@+id/lblRenWuGuanLiItem_MingCheng3" android:layout_marginBottom="20px"
+                        android:gravity="center_vertical|left" android:textColor="@color/gray"
+                        android:textSize="@dimen/EditTextFontSize" android:singleLine="true" android:ellipsize="end"/>
+                <TextView
+                        android:layout_width="275px"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblRenWuGuanLiItem_WanCheng3" android:layout_alignBottom="@+id/lblRenWuGuanLiItem_ZeRenRen3"
+                        android:layout_alignRight="@+id/lblRenWuGuanLiItem_MingChengVal3"
+                        android:layout_alignTop="@+id/lblRenWuGuanLiItem_ZeRenRen3" android:gravity="center_vertical|left"
+                        android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_width="630px"
+                    android:layout_height="140px" android:background="@drawable/rectgrayrect_layout"
+                    android:id="@+id/rlLayout4" android:layout_below="@+id/rlLayout3" android:visibility="invisible">
+                <TextView
+                        android:layout_width="160px"
+                        android:layout_height="40px"
+                        android:text="@string/renwumingcheng"
+                        android:id="@+id/lblRenWuGuanLiItem_MingCheng4" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="40px" android:layout_marginTop="30px" android:textColor="@color/gray"
+                        android:textSize="@dimen/EditTextFontSize" android:gravity="center_vertical|left"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblRenWuGuanLiItem_MingChengVal4" android:layout_alignTop="@+id/lblRenWuGuanLiItem_MingCheng4"
+                        android:layout_toRightOf="@+id/lblRenWuGuanLiItem_MingCheng4"
+                        android:layout_alignBottom="@+id/lblRenWuGuanLiItem_MingCheng4" android:layout_alignParentRight="true"
+                        android:gravity="center_vertical|left" android:layout_marginRight="45px"
+                        android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize" android:singleLine="true"
+                        android:ellipsize="end"/>
+                <TextView
+                        android:layout_width="250px"
+                        android:layout_height="40px"
+                        android:id="@+id/lblRenWuGuanLiItem_ZeRenRen4" android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@+id/lblRenWuGuanLiItem_MingCheng4" android:layout_marginBottom="20px"
+                        android:gravity="center_vertical|left" android:textColor="@color/gray"
+                        android:textSize="@dimen/EditTextFontSize" android:singleLine="true" android:ellipsize="end"/>
+                <TextView
+                        android:layout_width="275px"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblRenWuGuanLiItem_WanCheng4" android:layout_alignBottom="@+id/lblRenWuGuanLiItem_ZeRenRen4"
+                        android:layout_alignRight="@+id/lblRenWuGuanLiItem_MingChengVal4"
+                        android:layout_alignTop="@+id/lblRenWuGuanLiItem_ZeRenRen4" android:gravity="center_vertical|left"
+                        android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_width="630px"
+                    android:layout_height="140px" android:background="@drawable/rectgrayrect_layout"
+                    android:id="@+id/rlLayout5" android:layout_below="@+id/rlLayout4" android:visibility="invisible">
+                <TextView
+                        android:layout_width="160px"
+                        android:layout_height="40px"
+                        android:text="@string/renwumingcheng"
+                        android:id="@+id/lblRenWuGuanLiItem_MingCheng5" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="40px" android:layout_marginTop="30px" android:textColor="@color/gray"
+                        android:textSize="@dimen/EditTextFontSize" android:gravity="center_vertical|left"
+                        />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblRenWuGuanLiItem_MingChengVal5" android:layout_alignTop="@+id/lblRenWuGuanLiItem_MingCheng5"
+                        android:layout_toRightOf="@+id/lblRenWuGuanLiItem_MingCheng5"
+                        android:layout_alignBottom="@+id/lblRenWuGuanLiItem_MingCheng5" android:layout_alignParentRight="true"
+                        android:gravity="center_vertical|left" android:layout_marginRight="45px"
+                        android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize" android:singleLine="true"
+                        android:ellipsize="end"/>
+                <TextView
+                        android:layout_width="250px"
+                        android:layout_height="40px"
+                        android:id="@+id/lblRenWuGuanLiItem_ZeRenRen5" android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@+id/lblRenWuGuanLiItem_MingCheng5" android:layout_marginBottom="20px"
+                        android:gravity="center_vertical|left" android:textColor="@color/gray"
+                        android:textSize="@dimen/EditTextFontSize" android:ellipsize="end"/>
+                <TextView
+                        android:layout_width="275px"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblRenWuGuanLiItem_WanCheng5" android:layout_alignBottom="@+id/lblRenWuGuanLiItem_ZeRenRen5"
+                        android:layout_alignRight="@+id/lblRenWuGuanLiItem_MingChengVal5"
+                        android:layout_alignTop="@+id/lblRenWuGuanLiItem_ZeRenRen5" android:gravity="center_vertical|left"
+                        android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <Button
+                android:layout_width="230px"
+                android:layout_height="80px"
+                android:text="@string/shangyiye"
+                android:id="@+id/btnRenWuGuanLi_ShangYiYe" android:layout_below="@+id/relativeLayout3"
+                android:layout_alignLeft="@+id/relativeLayout3" android:layout_marginTop="30px"
+                android:textColor="@color/lightblue" android:textSize="@dimen/EditTextFontSize"
+                android:background="@drawable/roundbluerect_layout"/>
+        <Button
+                android:layout_width="230px"
+                android:layout_height="wrap_content"
+                android:text="@string/xiayiye"
+                android:id="@+id/btnRenWuGuanLi_XiaYiYe" android:layout_alignTop="@+id/btnRenWuGuanLi_ShangYiYe"
+                android:layout_alignRight="@+id/relativeLayout3"
+                android:layout_alignBottom="@+id/btnRenWuGuanLi_ShangYiYe"
+                android:background="@drawable/roundbluerect_layout" android:textColor="@color/lightblue"
+                android:textSize="@dimen/EditTextFontSize"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="100px" android:layout_alignParentBottom="true">
+        <RelativeLayout
+                android:layout_width="360px"
+                android:layout_height="fill_parent" android:background="@drawable/graybutton"
+                android:id="@+id/rlRenWuGuanLi_FaBu">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/faburenwu"
+                    android:id="@+id/lblRenWuGuanLi_FaBu" android:layout_centerVertical="true"
+                    android:textSize="@dimen/EditTextFontSize" android:textColor="@color/lightblue"
+                    android:gravity="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="360px"
+                android:layout_height="fill_parent" android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" android:background="@drawable/graybutton"
+                android:id="@+id/rlRenWuGuanLi_JieDao">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/jiedaorenwu"
+                    android:id="@+id/lblRenWuGuanLi_JieDao" android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textSize="@dimen/EditTextFontSize" android:textColor="@color/gray"
+                    />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

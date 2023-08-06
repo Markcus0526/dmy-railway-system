@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/rectgrayrect_layout" android:id="@+id/parent_layout">
+    <RelativeLayout
+            android:layout_width="1720px"
+            android:layout_height="fill_parent" android:layout_marginTop="40px" android:layout_marginLeft="20px"
+            android:layout_marginRight="20px" android:layout_marginBottom="40px">
+        <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/horizontalScrollView">
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:orientation="vertical">
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="110px" android:id="@+id/rlHeader" android:orientation="horizontal">
+                    <TextView
+                            android:layout_width="160px"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/lblCheDuiTitle" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                            android:textColor="@color/lightblue" android:textSize="@dimen/TitleFontSize" android:singleLine="true"
+                            android:ellipsize="end" android:background="@drawable/rectgrayrect_layout"
+                            android:text="@string/STR_CHEDUI" android:gravity="center"/>
+                    <TextView
+                            android:layout_width="160px"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/lblBanZuTitle" android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/lblCheDuiTitle" android:background="@drawable/rectgrayrect_layout"
+                            android:textColor="@color/lightblue" android:textSize="@dimen/TitleFontSize" android:ellipsize="end"
+                            android:singleLine="true" android:gravity="center" android:text="@string/banzu1"/>
+                    <TextView
+                            android:layout_width="120px"
+                            android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                            android:id="@+id/lblBanZuZiChaTitle" android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/lblBanZuTitle"
+                            android:textSize="36px" android:gravity="center" android:textColor="@color/lightblue"
+                            android:text="@string/xingming1"/>
+                    <TextView
+                            android:layout_width="200px"
+                            android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                            android:id="@+id/lblCheDuiZiChaTitle" android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/lblBanZuZiChaTitle"
+                            android:textSize="36px" android:gravity="center" android:textColor="@color/lightblue"
+                            android:text="@string/duanyishangpipingjiaoyujifen"/>
+                    <TextView
+                            android:layout_width="200px"
+                            android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                            android:id="@+id/lblDuanJiYiShangTitle" android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/lblCheDuiZiChaTitle"
+                            android:textSize="36px" android:gravity="center" android:textColor="@color/lightblue"
+                            android:text="@string/banzucheduipipingjiaoyujifen"/>
+                    <TextView
+                            android:layout_width="180px"
+                            android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                            android:id="@+id/lblLianGuaTitle" android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/lblDuanJiYiShangTitle"
+                            android:textSize="36px" android:gravity="center" android:textColor="@color/lightblue"
+                            android:text="@string/lianguakaohe"/>
+                    <TextView
+                            android:layout_width="180px"
+                            android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                            android:id="@+id/lblLiGangTitle" android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/lblLianGuaTitle"
+                            android:textSize="36px" android:gravity="center" android:textColor="@color/lightblue"
+                            android:text="@string/zhijieligangpeixunjifen"/>
+                    <TextView
+                            android:layout_width="180px"
+                            android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                            android:id="@+id/lblDiaoZhengTitle" android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/lblLiGangTitle"
+                            android:textSize="36px" android:gravity="center" android:textColor="@color/lightblue"
+                            android:text="@string/zhijiediaoligongzuogangwei"/>
+                    <TextView
+                            android:layout_width="180px"
+                            android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                            android:id="@+id/lblBenYueTitle" android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/lblDiaoZhengTitle"
+                            android:textSize="36px" android:gravity="center" android:textColor="@color/lightblue"
+                            android:text="@string/benyuejifen"/>
+                    <TextView
+                            android:layout_width="180px"
+                            android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                            android:id="@+id/lblJiLiTitle" android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/lblBenYueTitle"
+                            android:textSize="36px" android:gravity="center" android:textColor="@color/lightblue"
+                            android:text="@string/jilijifen"/>
+                    <TextView
+                            android:layout_width="180px"
+                            android:layout_height="fill_parent" android:background="@drawable/rectgrayrect_layout"
+                            android:id="@+id/lblLeiJiTitle" android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/lblJiLiTitle"
+                            android:textSize="36px" android:gravity="center" android:textColor="@color/lightblue"
+                            android:text="@string/leijijifen"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" android:layout_below="@+id/rlHeader"
+                        android:id="@+id/rlData" android:orientation="vertical">
+                    <ScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/scrollView">
+                        <LinearLayout
+                                android:id="@+id/rlDataList"
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+</RelativeLayout>
+

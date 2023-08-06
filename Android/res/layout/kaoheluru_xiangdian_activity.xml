@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white" android:id="@+id/rlKaoHeLuRu_XiangDianBack">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="95px" android:background="@drawable/bluebutton" android:id="@+id/rlTop">
+        <TextView
+                android:layout_width="260px"
+                android:layout_height="50px"
+                android:text="@string/xiangdian"
+                android:id="@+id/lblKaoHeLuRu_XiangDian_Title" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"
+                android:gravity="center_vertical|center_horizontal"/>
+        <ImageView
+                android:layout_width="52px"
+                android:layout_height="52px"
+                android:id="@+id/imgKaoHeLuRu_XiangDian_Back" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px" android:scaleType="fitCenter" android:src="@drawable/leftarrowicon"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/rlTop"
+            android:background="@drawable/mainback">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80px" android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" android:layout_marginTop="25px" android:layout_marginLeft="45px"
+                android:layout_marginRight="45px" android:background="@drawable/roundgrayrect_layout"
+                android:id="@+id/relativeLayout2">
+            <ImageView
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:id="@+id/imgKaoHeLuRu_XiangDian_Search" android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" android:layout_marginLeft="20px"
+                    android:scaleType="fitCenter" android:src="@drawable/searchicon"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/txtKaoHeLuRu_XiangDian_SearchText" android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imgKaoHeLuRu_XiangDian_Search" android:layout_marginLeft="25px"
+                    android:layout_marginRight="25px" android:background="@android:color/transparent"
+                    android:textColor="@color/black" android:textSize="@dimen/EditTextFontSize"
+                    android:singleLine="true" android:ellipsize="end"/>
+        </RelativeLayout>
+        <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/listKaoHeLuRu_XiangDian_Data" android:layout_below="@+id/relativeLayout2"
+                android:layout_marginTop="25px" android:layout_alignLeft="@+id/relativeLayout2"
+                android:layout_alignRight="@+id/relativeLayout2" android:layout_marginBottom="25px"
+                android:background="@drawable/rectgray_layout"/>
+    </RelativeLayout>
+</RelativeLayout>
+

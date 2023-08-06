@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white" android:id="@+id/rlViewBack" android:padding="2px">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="280px" android:background="@drawable/rectgraywhite_layout">
+        <TextView
+                android:layout_width="80px"
+                android:layout_height="50px"
+                android:text="姓名 ："
+                android:id="@+id/lblName" android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true" android:layout_marginTop="25px"
+                android:layout_marginLeft="10px" android:textColor="@color/gray"
+                android:textSize="24px" android:gravity="center_vertical|left"/>
+        <TextView
+                android:layout_width="90px"
+                android:layout_height="50px"
+                android:id="@+id/lblNameVal" android:layout_alignTop="@+id/lblName"
+                android:layout_toRightOf="@+id/lblName" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="24px" android:singleLine="true"/>
+        <TextView
+                android:layout_width="130px"
+                android:layout_height="50px"
+                android:text="所属部门 ："
+                android:id="@+id/lblPart" android:layout_alignTop="@+id/lblNameVal"
+                android:layout_toRightOf="@+id/lblNameVal" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="24px" android:layout_marginLeft="10px"/>
+        <TextView
+                android:layout_width="90px"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblPartVal" android:layout_alignTop="@+id/lblPart1"
+                android:layout_toRightOf="@+id/lblPart" android:layout_alignBottom="@+id/lblPart"
+                android:gravity="center_vertical|left" android:textColor="@color/gray" android:textSize="24px"
+                android:singleLine="true"/>
+        <TextView
+                android:layout_width="130px"
+                android:layout_height="wrap_content"
+                android:text="所属班组 ："
+                android:id="@+id/lblGroup" android:layout_alignTop="@+id/lblPartVal"
+                android:layout_toRightOf="@+id/lblPartVal" android:layout_alignBottom="@+id/lblPartVal"
+                android:layout_marginLeft="10px" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="24px" android:ellipsize="end"
+                android:singleLine="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblGroupVal" android:layout_alignTop="@+id/lblGroup"
+                android:layout_toRightOf="@+id/lblGroup" android:layout_alignBottom="@+id/lblGroup"
+                android:layout_marginRight="10px" android:layout_alignParentRight="true"
+                android:gravity="center_vertical|left" android:textColor="@color/gray" android:textSize="24px"
+                android:singleLine="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:text="职务 ："
+                android:id="@+id/lblRole" android:layout_below="@+id/lblName"
+                android:layout_alignLeft="@+id/lblName" android:layout_toLeftOf="@+id/lblNameVal"
+                android:textSize="24px" android:textColor="@color/gray" android:gravity="center_vertical|left"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblRoleVal" android:layout_below="@+id/lblNameVal"
+                android:layout_toRightOf="@+id/lblName" android:layout_alignBottom="@+id/lblRole"
+                android:layout_alignRight="@+id/lblNameVal" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="24px" android:singleLine="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="包保分工 ："
+                android:id="@+id/lblRoleKind" android:layout_below="@+id/lblPart"
+                android:layout_alignLeft="@+id/lblPart" android:layout_alignBottom="@+id/lblRoleVal"
+                android:layout_alignRight="@+id/lblPart" android:textSize="24px"
+                android:textColor="@color/gray" android:gravity="center_vertical|left"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblRoleKindVal" android:layout_below="@+id/lblPartVal"
+                android:layout_alignLeft="@+id/lblPartVal" android:layout_alignBottom="@+id/lblRoleKind"
+                android:layout_alignRight="@+id/lblPartVal" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="24px" android:singleLine="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblTrainNo" android:layout_below="@+id/lblGroup"
+                android:layout_alignLeft="@+id/lblGroup"
+                android:textSize="24px" android:textColor="@color/gray" android:gravity="center_vertical|left"
+                android:layout_toLeftOf="@+id/lblGroupVal" android:text="车次 ："
+                android:layout_alignBottom="@+id/lblRoleKindVal1"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblTrainNoVal" android:layout_below="@+id/lblGroup"
+                android:layout_toRightOf="@+id/lblGroup" android:layout_alignBottom="@+id/lblTrainNo"
+                android:layout_alignRight="@+id/lblGroupVal" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="24px" android:singleLine="true"/>
+        <TextView
+                android:layout_width="135px"
+                android:layout_height="50px"
+                android:text="手机号码 ："
+                android:id="@+id/lblPhoneNum" android:layout_below="@+id/lblRole"
+                android:layout_alignLeft="@+id/lblRole" android:textColor="@color/gray" android:textSize="24px"
+                android:gravity="center_vertical|left"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblPhoneNumVal" android:layout_below="@+id/lblRoleVal"
+                android:layout_toRightOf="@+id/lblPhoneNum" android:layout_alignBottom="@+id/lblPhoneNum"
+                android:layout_alignRight="@+id/lblTrainNoVal" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="24px" android:singleLine="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:text="小号 ："
+                android:id="@+id/lblSortNum"
+                android:layout_alignLeft="@+id/lblPhoneNum" android:textSize="24px"
+                android:textColor="@color/gray" android:gravity="center_vertical|left"
+                android:layout_below="@+id/lblPhoneNum" android:layout_alignRight="@+id/lblPhoneNum"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblSortNumVal" android:layout_below="@+id/lblPhoneNumVal"
+                android:layout_alignLeft="@+id/lblPhoneNumVal" android:layout_alignBottom="@+id/lblSortNum"
+                android:layout_alignRight="@+id/lblPhoneNumVal" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="24px" android:singleLine="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:text="办公电话 ："
+                android:id="@+id/lblLienNum" android:layout_below="@+id/lblSortNum"
+                android:layout_alignLeft="@+id/lblSortNum" android:textSize="24px"
+                android:textColor="@color/gray" android:gravity="center_vertical|left"
+                android:layout_toLeftOf="@+id/lblSortNumVal"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblLineNumVal" android:layout_below="@+id/lblSortNumVal"
+                android:layout_alignLeft="@+id/lblSortNumVal" android:layout_alignBottom="@+id/lblLienNum"
+                android:layout_alignRight="@+id/lblSortNumVal" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="24px" android:singleLine="true"/>
+    </RelativeLayout>
+</RelativeLayout>

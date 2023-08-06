@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/white" android:id="@+id/rlRenWuJieDaoItemBack">
+    <RelativeLayout
+            android:layout_width="630px"
+            android:layout_height="270px" android:background="@color/white">
+        <TextView
+                android:layout_width="520px"
+                android:layout_height="40px"
+                android:text="New Text"
+                android:id="@+id/lblKaiShiShiJian" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                android:layout_marginTop="30px" android:layout_marginLeft="35px" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="24px"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40px"
+                android:text="New Text"
+                android:id="@+id/lblJieShuShiJian" android:layout_below="@+id/lblKaiShiShiJian"
+                android:layout_alignLeft="@+id/lblKaiShiShiJian" android:layout_alignRight="@+id/lblKaiShiShiJian"
+                android:textColor="@color/gray" android:textSize="24px" android:gravity="center_vertical|left"
+                android:layout_marginTop="10px"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:text="New Text"
+                android:id="@+id/lblTitle" android:layout_below="@+id/lblJieShuShiJian"
+                android:layout_alignLeft="@+id/lblJieShuShiJian" android:layout_alignRight="@+id/lblJieShuShiJian"
+                android:layout_marginTop="10px" android:gravity="center_vertical|left" android:singleLine="true"
+                android:ellipsize="end" android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+        <TextView
+                android:layout_width="200px"
+                android:layout_height="50px"
+                android:text="New Text"
+                android:id="@+id/lblStatus" android:layout_below="@+id/lblTitle"
+                android:layout_alignLeft="@+id/lblTitle" android:layout_marginTop="10px" android:gravity="center_vertical|left"
+                android:textColor="@color/darkgreen" android:textSize="@dimen/EditTextFontSize"/>
+        <TextView
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/lblFile" android:layout_alignTop="@+id/lblStatus"
+                android:layout_alignRight="@+id/lblTitle" android:layout_alignBottom="@+id/lblStatus"
+                android:textSize="24px" android:textColor="@color/gray" android:gravity="center_vertical|right"/>
+        <ImageView
+                android:layout_width="30px"
+                android:layout_height="fill_parent"
+                android:id="@+id/imgDetail" android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" android:layout_marginRight="15px" android:scaleType="fitCenter"
+                android:src="@drawable/rightgrayarrowicon"/>
+    </RelativeLayout>
+</RelativeLayout>
+

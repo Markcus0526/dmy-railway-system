@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/rectgrayrect_layout" android:id="@+id/parent_layout">
+    <RelativeLayout
+            android:layout_width="1720px"
+            android:layout_height="fill_parent" android:layout_marginTop="40px" android:layout_marginLeft="20px"
+            android:layout_marginRight="20px" android:layout_marginBottom="40px">
+        <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/horizontalScrollView">
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:orientation="vertical">
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="160px" android:id="@+id/rlHeader" android:orientation="horizontal">
+                    <TextView
+                            android:layout_width="200px"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/lblCheDuiTitle" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                            android:textColor="@color/lightblue" android:textSize="@dimen/EditTextFontSize" android:singleLine="true"
+                            android:ellipsize="end" android:background="@drawable/rectgrayrect_layout"
+                            android:text="@string/STR_CHEDUI" android:gravity="center"/>
+                    <TextView
+                            android:layout_width="200px"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/lblBanZuTitle" android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/lblCheDuiTitle" android:background="@drawable/rectgrayrect_layout"
+                            android:textColor="@color/lightblue" android:textSize="@dimen/EditTextFontSize" android:ellipsize="end"
+                            android:singleLine="true" android:gravity="center" android:text="@string/banzu1"/>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="400px"
+                            android:layout_height="fill_parent" android:id="@+id/llOne"
+                            android:background="@drawable/rectgrayrect_layout">
+                        <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="80px"
+                                android:text="@string/pipingjiaoyu1"
+                                android:id="@+id/lblOneTitle1" android:gravity="center"
+                                android:textColor="@color/lightblue" android:textSize="@dimen/EditTextFontSize"
+                                android:background="@drawable/rectgrayrect_layout"/>
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+                            <TextView
+                                    android:layout_width="200px"
+                                    android:layout_height="fill_parent"
+                                    android:text="@string/banzuzicha"
+                                    android:id="@+id/lblOne" android:gravity="center"
+                                    android:textColor="@color/lightblue" android:textSize="@dimen/EditTextFontSize"
+                                    android:background="@drawable/rectgrayrect_layout"/>
+                            <TextView
+                                    android:layout_width="200px"
+                                    android:layout_height="fill_parent"
+                                    android:text="@string/banzuyishangjiancha"
+                                    android:id="@+id/lblTwoTitle" android:background="@drawable/rectgrayrect_layout"
+                                    android:gravity="center" android:textColor="@color/lightblue"
+                                    android:textSize="@dimen/EditTextFontSize"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="400px"
+                            android:layout_height="fill_parent" android:id="@+id/llTwo"
+                            android:background="@drawable/rectgrayrect_layout">
+                        <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="80px"
+                                android:text="@string/pipingjiaoyu2"
+                                android:id="@+id/lblTwoTitle1" android:gravity="center"
+                                android:textColor="@color/lightblue" android:textSize="@dimen/EditTextFontSize"
+                                android:background="@drawable/rectgrayrect_layout"/>
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+                            <TextView
+                                    android:layout_width="200px"
+                                    android:layout_height="fill_parent"
+                                    android:text="@string/banzuzicha"
+                                    android:id="@+id/lblThreeTitle" android:gravity="center"
+                                    android:textColor="@color/lightblue" android:textSize="@dimen/EditTextFontSize"
+                                    android:background="@drawable/rectgrayrect_layout"/>
+                            <TextView
+                                    android:layout_width="200px"
+                                    android:layout_height="fill_parent"
+                                    android:text="@string/banzuyishangjiancha"
+                                    android:id="@+id/lblFourTitle" android:background="@drawable/rectgrayrect_layout"
+                                    android:gravity="center" android:textColor="@color/lightblue"
+                                    android:textSize="@dimen/EditTextFontSize"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="400px"
+                            android:layout_height="fill_parent" android:id="@+id/llThree"
+                            android:background="@drawable/rectgrayrect_layout">
+                        <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="80px"
+                                android:text="@string/ligangpeixun"
+                                android:id="@+id/lblThreeTitle1" android:gravity="center"
+                                android:textColor="@color/lightblue" android:textSize="@dimen/EditTextFontSize"
+                                android:background="@drawable/rectgrayrect_layout"/>
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+                            <TextView
+                                    android:layout_width="200px"
+                                    android:layout_height="fill_parent"
+                                    android:text="@string/banzuzicha"
+                                    android:id="@+id/lblFiveTitle" android:gravity="center"
+                                    android:textColor="@color/lightblue" android:textSize="@dimen/EditTextFontSize"
+                                    android:background="@drawable/rectgrayrect_layout"/>
+                            <TextView
+                                    android:layout_width="200px"
+                                    android:layout_height="fill_parent"
+                                    android:text="@string/banzuyishangjiancha"
+                                    android:id="@+id/lblSixTitle" android:background="@drawable/rectgrayrect_layout"
+                                    android:gravity="center" android:textColor="@color/lightblue"
+                                    android:textSize="@dimen/EditTextFontSize"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" android:layout_below="@+id/rlHeader"
+                        android:id="@+id/rlData" android:orientation="vertical">
+                    <ScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/scrollView">
+                        <LinearLayout
+                                android:id="@+id/rlDataList"
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+</RelativeLayout>
+

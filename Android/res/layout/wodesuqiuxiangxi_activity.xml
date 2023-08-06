@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white" android:id="@+id/rlBack">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="95px" android:background="@drawable/bluebutton" android:id="@+id/rlTop">
+        <TextView
+                android:layout_width="260px"
+                android:layout_height="50px"
+                android:id="@+id/textTitle" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"
+                android:gravity="center_vertical|center_horizontal"/>
+        <ImageView
+                android:layout_width="52px"
+                android:layout_height="52px"
+                android:id="@+id/imageBack" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px" android:scaleType="fitCenter" android:src="@drawable/leftarrowicon"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" android:background="@color/white"
+            android:layout_below="@+id/rlTop">
+
+        <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/scrollView">
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <TextView
+                        android:layout_width="200px"
+                        android:layout_height="60px"
+                        android:text="@string/tichushijian"
+                        android:id="@+id/textPostDate" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="30px" android:layout_marginTop="50px" android:gravity="left|center_vertical"
+                        android:textColor="@color/darkgray" android:textSize="@dimen/EditTextFontSize"/>
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textPostDateVal" android:layout_alignTop="@+id/textPostDate"
+                        android:layout_toRightOf="@+id/textPostDate" android:layout_marginLeft="20px"
+                        android:layout_alignBottom="@+id/textPostDate" android:layout_alignParentRight="true"
+                        android:layout_marginRight="30px" android:textColor="@color/darkgray"
+                        android:textSize="@dimen/EditTextFontSize"
+                        android:background="@drawable/roundgrayrect_layout" android:gravity="center"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60px"
+                        android:text="@string/suqiuneirong"
+                        android:id="@+id/textView" android:layout_below="@+id/textPostDate"
+                        android:layout_alignLeft="@+id/textPostDate" android:layout_marginTop="30px"
+                        android:layout_alignRight="@+id/textPostDate" android:gravity="left|center_vertical"
+                        android:textColor="@color/darkgray" android:textSize="@dimen/EditTextFontSize"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textContent" android:layout_below="@+id/textView"
+                        android:layout_alignLeft="@+id/textView" android:layout_marginTop="20px"
+                        android:layout_alignRight="@+id/textPostDateVal" android:background="@drawable/roundgrayrect_layout"
+                        android:paddingLeft="10px" android:paddingTop="10px" android:paddingRight="10px"
+                        android:paddingBottom="10px" android:textColor="@color/darkgray"
+                        android:textSize="@dimen/EditTextFontSize"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60px"
+                        android:text="@string/chulijieguo"
+                        android:id="@+id/textView1" android:layout_below="@+id/textContent"
+                        android:layout_alignLeft="@+id/textPostDate" android:layout_marginTop="30px"
+                        android:layout_alignRight="@+id/textPostDate" android:gravity="left|center_vertical"
+                        android:textColor="@color/darkgray" android:textSize="@dimen/EditTextFontSize"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textFeedback" android:layout_below="@+id/textView1"
+                        android:layout_alignLeft="@+id/textView" android:layout_marginTop="20px"
+                        android:layout_alignRight="@+id/textPostDateVal" android:background="@drawable/roundgrayrect_layout"
+                        android:paddingLeft="10px" android:paddingTop="10px" android:paddingRight="10px"
+                        android:paddingBottom="10px" android:textColor="@color/darkgray"
+                        android:textSize="@dimen/EditTextFontSize"/>
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50px" android:layout_below="@+id/textFeedback">
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>
+

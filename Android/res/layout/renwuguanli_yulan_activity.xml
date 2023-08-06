@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white" android:id="@+id/rlRenWuYuLan_Back">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="95px" android:background="@drawable/bluebutton" android:id="@+id/rlTop">
+        <TextView
+                android:layout_width="260px"
+                android:layout_height="50px"
+                android:text="@string/renwuyulan"
+                android:id="@+id/lblRenWuYuLan_Title" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"
+                android:gravity="center_vertical|center_horizontal"/>
+        <ImageView
+                android:layout_width="52px"
+                android:layout_height="52px"
+                android:id="@+id/imgRenWuYuLan_Back" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px" android:scaleType="fitCenter" android:src="@drawable/leftarrowicon"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/rlTop"
+            android:background="@drawable/mainback">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/roundgrayrect_layout"
+                android:layout_marginLeft="20px" android:layout_marginTop="20px" android:layout_marginRight="20px"
+                android:layout_marginBottom="200px" android:id="@+id/relativeLayout2">
+            <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scrollView">
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="60px"
+                            android:text="@string/renwumingcheng"
+                            android:id="@+id/lblRenWuYuLan_WenTi" android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true" android:layout_marginLeft="35px"
+                            android:layout_marginTop="35px" android:textColor="@color/gray"
+                            android:textSize="@dimen/EditTextFontSize" android:gravity="center_vertical|left"
+                            android:layout_marginRight="35px" android:singleLine="true" android:ellipsize="end"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60px"
+                            android:text="@string/kaishishijian"
+                            android:id="@+id/lblRenWuYuLan_KaiShiShiJian" android:layout_below="@+id/lblRenWuYuLan_WenTi"
+                            android:layout_alignLeft="@+id/lblRenWuYuLan_WenTi"
+                            android:layout_marginTop="30px"
+                            android:layout_alignRight="@+id/lblRenWuYuLan_WenTi" android:gravity="center_vertical|left"
+                            android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60px"
+                            android:text="@string/jieshushijian"
+                            android:id="@+id/lblRenWuYuLan_JieShuShiJian" android:layout_below="@+id/lblRenWuYuLan_KaiShiShiJian"
+                            android:layout_alignLeft="@+id/lblRenWuYuLan_KaiShiShiJian"
+                            android:layout_marginTop="30px"
+                            android:layout_alignRight="@+id/lblRenWuYuLan_KaiShiShiJian" android:gravity="center_vertical|left"
+                            android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+                    <TextView
+                            android:layout_width="200px"
+                            android:layout_height="60px"
+                            android:text="@string/zhixingrenliebiao"
+                            android:id="@+id/lblRenWuYuLan_ZhiXingRen"
+                            android:layout_marginTop="30px"
+                            android:gravity="center_vertical|left"
+                            android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"
+                            android:layout_below="@+id/lblRenWuYuLan_JieShuShiJian"
+                            android:layout_alignLeft="@+id/lblRenWuYuLan_JieShuShiJian"
+                            />
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lblRenWuYuLan_ZhiXingRenVal" android:layout_alignTop="@+id/lblRenWuYuLan_ZhiXingRen"
+                            android:layout_toRightOf="@+id/lblRenWuYuLan_ZhiXingRen"
+                            android:layout_alignRight="@+id/lblRenWuYuLan_JieShuShiJian"
+                            android:layout_marginLeft="20px" android:gravity="left|top"
+                            android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"
+                            android:paddingTop="10px"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60px"
+                            android:text="@string/renwuneirong"
+                            android:id="@+id/lblRenWuYuLan_NeiRong" android:layout_alignLeft="@+id/lblRenWuYuLan_ZhiXingRen"
+                            android:layout_below="@+id/lblRenWuYuLan_ZhiXingRenVal" android:layout_marginTop="30px"
+                            android:layout_alignRight="@+id/lblRenWuYuLan_JieShuShiJian" android:gravity="center_vertical|left"
+                            android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+                    <ScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200px"
+                            android:id="@+id/scrollView2"
+                            android:layout_alignLeft="@+id/lblRenWuYuLan_NeiRong"
+                            android:layout_below="@+id/lblRenWuYuLan_NeiRong" android:layout_marginTop="10px"
+                            android:layout_alignRight="@+id/lblRenWuYuLan_NeiRong">
+                        <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+                            <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:id="@+id/lblRenWuYuLan_NeiRongVal"
+                                    android:gravity="left|top" android:textColor="@color/gray"
+                                    android:textSize="@dimen/EditTextFontSize"/>
+                        </RelativeLayout>
+                    </ScrollView>
+                    <TextView
+                            android:layout_width="350px"
+                            android:layout_height="60px"
+                            android:text="@string/fujian"
+                            android:id="@+id/lblRenWuYuLan_FileName" android:layout_alignLeft="@+id/lblRenWuYuLan_NeiRong"
+                            android:layout_below="@+id/scrollView2" android:layout_marginTop="20px"
+                            android:gravity="center_vertical|left" android:textColor="@color/lightblue"
+                            android:textSize="@dimen/EditTextFontSize" android:singleLine="true"
+                            android:ellipsize="middle"/>
+                    <Button
+                            android:layout_width="150px"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shangchuan"
+                            android:id="@+id/btnRenWuYuLan_Upload" android:layout_alignTop="@+id/lblRenWuGuanLi_FileName"
+                            android:layout_alignRight="@+id/scrollView2"
+                            android:layout_alignBottom="@+id/lblRenWuGuanLi_FileName"
+                            android:background="@drawable/roundbluerect_layout" android:textColor="@color/lightblue"
+                            android:textSize="@dimen/EditTextFontSize" android:visibility="gone"/>
+                    <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="20px" android:layout_below="@+id/lblRenWuYuLan_FileName">
+                    </RelativeLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+        <Button
+                android:layout_width="550px"
+                android:layout_height="80px"
+                android:text="@string/querenfabu"
+                android:id="@+id/btnRenWuYuLan_Ok" android:layout_alignParentBottom="true"
+                android:layout_marginBottom="60px"
+                android:layout_centerHorizontal="true" android:textColor="@color/lightblue"
+                android:textSize="@dimen/EditTextFontSize" android:background="@drawable/roundbluerect_layout"/>
+    </RelativeLayout>
+</RelativeLayout>
+

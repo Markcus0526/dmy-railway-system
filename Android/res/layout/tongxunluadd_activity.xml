@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white" android:id="@+id/rlTongXunLuAddBack">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="95px" android:background="@drawable/bluebutton" android:id="@+id/rlTop">
+        <TextView
+                android:layout_width="260px"
+                android:layout_height="50px"
+                android:text="@string/tianjiatongxunlu"
+                android:id="@+id/lblTongXunLuAdd_Title" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"
+                android:gravity="center_vertical|center_horizontal"/>
+        <ImageView
+                android:layout_width="52px"
+                android:layout_height="52px"
+                android:id="@+id/imgTongXunLuAdd_Back" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px" android:scaleType="fitCenter" android:src="@drawable/leftarrowicon"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true" android:background="@drawable/mainback"
+            android:layout_below="@+id/rlTop">
+        <TextView
+                android:layout_width="170px"
+                android:layout_height="80px"
+                android:text="@string/xingming"
+                android:id="@+id/lblTongXunLuAdd_XingMing" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px" android:layout_marginTop="40px" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_alignTop="@+id/lblTongXunLuAdd_XingMing"
+                android:layout_toRightOf="@+id/lblTongXunLuAdd_XingMing"
+                android:layout_alignBottom="@+id/lblTongXunLuAdd_XingMing" android:layout_marginRight="40px"
+                android:background="@drawable/roundgrayrect_layout" android:id="@+id/relativeLayout2">
+        </RelativeLayout>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:text="@string/zhiwu"
+                android:id="@+id/lblTongXunLuAdd_ZhiWu" android:layout_below="@+id/lblTongXunLuAdd_XingMing"
+                android:layout_alignLeft="@+id/lblTongXunLuAdd_XingMing" android:layout_marginTop="30px"
+                android:layout_alignRight="@+id/lblTongXunLuAdd_XingMing" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignTop="@+id/lblTongXunLuAdd_ZhiWu"
+                android:layout_alignLeft="@+id/relativeLayout2"
+                android:layout_alignRight="@+id/relativeLayout2"
+                android:layout_alignBottom="@+id/lblTongXunLuAdd_ZhiWu"
+                android:id="@+id/relativeLayout3"
+                android:background="@drawable/roundgrayrect_layout">
+        </RelativeLayout>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:text="@string/suoshuduanji"
+                android:id="@+id/lblTongXunLuAdd_DuanJi" android:layout_below="@+id/lblTongXunLuAdd_ZhiWu"
+                android:layout_alignLeft="@+id/lblTongXunLuAdd_ZhiWu" android:layout_marginTop="30px"
+                android:layout_alignRight="@+id/lblTongXunLuAdd_ZhiWu" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignTop="@+id/lblTongXunLuAdd_DuanJi"
+                android:layout_alignLeft="@+id/relativeLayout3"
+                android:layout_alignRight="@+id/relativeLayout3"
+                android:layout_alignBottom="@+id/lblTongXunLuAdd_DuanJi"
+                android:id="@+id/relativeLayout4"
+                android:background="@drawable/roundgrayrect_layout">
+        </RelativeLayout>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:text="@string/suoshuchedui"
+                android:id="@+id/lblTongXunLuAdd_CheDui" android:layout_below="@+id/lblTongXunLuAdd_DuanJi"
+                android:layout_alignLeft="@+id/lblTongXunLuAdd_DuanJi" android:layout_marginTop="30px"
+                android:layout_alignRight="@+id/lblTongXunLuAdd_DuanJi" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_alignTop="@+id/lblTongXunLuAdd_CheDui"
+                android:layout_alignLeft="@+id/relativeLayout4" android:layout_alignRight="@+id/relativeLayout4"
+                android:layout_alignBottom="@+id/lblTongXunLuAdd_CheDui"
+                android:id="@+id/relativeLayout5"
+                android:background="@drawable/roundgrayrect_layout">
+        </RelativeLayout>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:text="@string/suoshulieche"
+                android:id="@+id/lblTongXunLuAdd_LieChe" android:layout_below="@+id/lblTongXunLuAdd_CheDui"
+                android:layout_alignLeft="@+id/lblTongXunLuAdd_CheDui" android:layout_marginTop="30px"
+                android:layout_alignRight="@+id/lblTongXunLuAdd_CheDui" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_alignTop="@+id/lblTongXunLuAdd_LieChe"
+                android:layout_alignLeft="@+id/relativeLayout5" android:layout_alignRight="@+id/relativeLayout5"
+                android:layout_alignBottom="@+id/lblTongXunLuAdd_LieChe"
+                android:id="@+id/relativeLayout6"
+                android:background="@drawable/roundgrayrect_layout">
+        </RelativeLayout>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:text="@string/suoshubanzu"
+                android:id="@+id/lblTongXunLuAdd_BanZu" android:layout_below="@+id/lblTongXunLuAdd_LieChe"
+                android:layout_alignLeft="@+id/lblTongXunLuAdd_LieChe" android:layout_marginTop="30px"
+                android:layout_alignRight="@+id/lblTongXunLuAdd_LieChe" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_alignTop="@+id/lblTongXunLuAdd_BanZu"
+                android:layout_alignLeft="@+id/relativeLayout6" android:layout_alignRight="@+id/relativeLayout6"
+                android:layout_alignBottom="@+id/lblTongXunLuAdd_BanZu"
+                android:id="@+id/relativeLayout7"
+                android:background="@drawable/roundgrayrect_layout">
+        </RelativeLayout>
+        <Button
+                android:layout_width="230px"
+                android:layout_height="80px"
+                android:text="@string/querentianjia"
+                android:id="@+id/btnTongXunLuAdd_OK" android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/lblTongXunLuAdd_BanZu" android:layout_marginBottom="40px"
+                android:textColor="@color/lightblue" android:textSize="@dimen/EditTextFontSize"
+                android:background="@drawable/roundbluerect_layout"/>
+        <Button
+                android:layout_width="230px"
+                android:layout_height="80px"
+                android:text="@string/quxiaotianjia"
+                android:id="@+id/btnTongXunLuAdd_Cancel" android:layout_alignBottom="@+id/btnTongXunLuAdd_OK"
+                android:layout_alignRight="@+id/relativeLayout7" android:background="@drawable/roundbluerect_layout"
+                android:textColor="@color/lightblue" android:textSize="@dimen/EditTextFontSize"/>
+    </RelativeLayout>
+</RelativeLayout>
+

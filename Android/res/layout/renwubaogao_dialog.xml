@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/parent_layout"
+                android:background="@android:color/transparent" android:gravity="center">
+
+    <RelativeLayout
+            android:layout_width="630px"
+            android:layout_height="420px"
+            android:background="@drawable/rectgrayrect_layout">
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="250px"
+                android:ems="10"
+                android:id="@+id/txtContent" android:layout_alignParentTop="true"
+                android:layout_marginTop="30px" android:gravity="left|top"
+                android:background="@drawable/roundgrayrect_layout" android:textColor="@color/gray"
+                android:textSize="@dimen/EditTextFontSize"
+                android:layout_marginLeft="20px" android:layout_marginRight="20px"
+                android:layout_alignParentLeft="true" android:layout_alignParentRight="true"
+                android:hint="@string/shurubaogao" android:padding="20px"/>
+        <Button
+                android:layout_width="240px"
+                android:layout_height="80px"
+                android:text="@string/STR_CANCEL"
+                android:id="@+id/btnClear"
+                android:background="@drawable/roundbluerect_layout"
+                android:textColor="@color/lightblue" android:textSize="@dimen/EditTextFontSize"
+                android:layout_below="@+id/txtContent" android:layout_alignTop="@+id/btnOk"
+                android:layout_alignRight="@+id/txtContent"/>
+        <Button
+                android:layout_width="240px"
+                android:layout_height="80px"
+                android:text="@string/STR_OK"
+                android:id="@+id/btnOk"
+                android:background="@drawable/roundbluerect_layout"
+                android:textColor="@color/lightblue" android:textSize="@dimen/EditTextFontSize"
+                android:layout_below="@+id/txtContent" android:layout_alignLeft="@+id/txtContent"
+                android:layout_marginTop="30px"/>
+    </RelativeLayout>
+</RelativeLayout>

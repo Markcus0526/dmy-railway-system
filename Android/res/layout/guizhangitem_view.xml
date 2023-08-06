@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/white" android:id="@+id/rlGuiZhangItemBack">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="350px"
+            android:layout_alignParentLeft="true" android:background="@drawable/tableback">
+        <view
+                android:layout_width="189px"
+                android:layout_height="280px"
+                class="com.damytech.utils.SmartImageView.SmartImageView"
+                android:id="@+id/imgGuiZhangItem3" android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:scaleType="fitXY" android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/imgGuiZhangItem2" android:visibility="invisible"/>
+        <view
+                android:layout_width="189px"
+                android:layout_height="280px"
+                class="com.damytech.utils.SmartImageView.SmartImageView"
+                android:id="@+id/imgGuiZhangItem2" android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" android:scaleType="fitXY"
+                android:visibility="invisible"/>
+        <view
+                android:layout_width="189px"
+                android:layout_height="280px"
+                class="com.damytech.utils.SmartImageView.SmartImageView"
+                android:id="@+id/imgGuiZhangItem1" android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imgGuiZhangItem2" android:layout_marginRight="40px"
+                android:scaleType="fitXY" android:visibility="invisible"/>
+        <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:id="@+id/imgNewFile3" android:layout_alignTop="@+id/imgGuiZhangItem3"
+                android:layout_alignRight="@+id/imgGuiZhangItem3" android:scaleType="fitCenter"
+                android:src="@drawable/newfile" android:visibility="invisible"
+                android:layout_marginRight="-20px" android:layout_marginTop="-20px"/>
+        <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:id="@+id/imgNewFile2" android:layout_alignTop="@+id/imgGuiZhangItem2"
+                android:layout_alignRight="@+id/imgGuiZhangItem2" android:scaleType="fitCenter"
+                android:src="@drawable/newfile" android:visibility="invisible"
+                android:layout_marginRight="-20px" android:layout_marginTop="-20px"/>
+        <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:id="@+id/imgNewFile1" android:layout_alignTop="@+id/imgGuiZhangItem1"
+                android:layout_alignRight="@+id/imgGuiZhangItem1" android:scaleType="fitCenter"
+                android:src="@drawable/newfile" android:visibility="invisible"
+                android:layout_marginRight="-20px" android:layout_marginTop="-20px"/>
+    </RelativeLayout>
+</RelativeLayout>
+

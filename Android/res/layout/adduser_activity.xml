@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white" android:id="@+id/rlAddUserBack">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="95px" android:background="@drawable/bluebutton" android:id="@+id/rlTop">
+        <TextView
+                android:layout_width="260px"
+                android:layout_height="50px"
+                android:text="@string/xuanzelianxiren"
+                android:id="@+id/lblAddUserTitle" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:textColor="@color/white" android:textSize="@dimen/TitleFontSize"
+                android:gravity="center_vertical|center_horizontal"/>
+        <ImageView
+                android:layout_width="52px"
+                android:layout_height="52px"
+                android:id="@+id/imgBack" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px" android:scaleType="fitCenter" android:src="@drawable/leftarrowicon"/>
+        <TextView
+                android:layout_width="100px"
+                android:layout_height="fill_parent"
+                android:text="@string/wancheng"
+                android:id="@+id/lblOk" android:layout_centerVertical="true" android:layout_alignParentRight="true"
+                android:textColor="@color/white" android:textSize="@dimen/EditTextFontSize"
+                android:layout_marginRight="10px" android:gravity="center"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/rlTop"
+            android:background="#EEEEEE">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80px" android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" android:layout_marginTop="30px" android:layout_marginLeft="30px"
+                android:layout_marginRight="30px" android:background="@drawable/roundgrayrect_layout"
+                android:id="@+id/relativeLayout2">
+            <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:id="@+id/imgFind" android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" android:layout_marginLeft="20px"
+                    android:scaleType="fitCenter" android:src="@drawable/searchicon"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/txtKeyword" android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imgFind" android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px" android:background="@android:color/transparent"
+                    android:ellipsize="end" android:gravity="center_vertical|left" android:textColor="@color/gray"
+                    android:textSize="@dimen/EditTextFontSize" android:singleLine="true"/>
+        </RelativeLayout>
+        <view android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              class="com.damytech.utils.PullRefreshListView.PullToRefreshListView" android:id="@+id/viewDatas"
+              android:layout_below="@+id/relativeLayout2" android:layout_centerHorizontal="true"
+              android:layout_marginTop="20px" android:layout_marginBottom="20px"/>
+    </RelativeLayout>
+</RelativeLayout>
+

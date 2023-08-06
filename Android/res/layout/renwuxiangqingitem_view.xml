@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/white" android:id="@+id/rlRenWuXiangQingItemBack">
+    <RelativeLayout
+            android:layout_width="630px"
+            android:layout_height="wrap_content" android:background="@drawable/rectgrayrect_layout" android:id="@+id/relativeLayout1">
+        <TextView
+                android:layout_width="160px"
+                android:layout_height="40px"
+                android:text="@string/baogaoqingkuang"
+                android:id="@+id/lblTite" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20px" android:layout_marginTop="30px" android:textColor="@color/gray"
+                android:textSize="@dimen/EditTextFontSize" android:gravity="center_vertical|left"/>
+        <TextView
+                android:layout_width="275px"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblDate" android:layout_alignTop="@+id/lblTite"
+                android:layout_toRightOf="@+id/lblTite"
+                android:layout_alignBottom="@+id/lblTite"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize" android:singleLine="true"
+                android:ellipsize="end"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblName" android:layout_alignTop="@+id/lblDate"
+                android:layout_alignParentRight="true" android:layout_alignBottom="@+id/lblDate"
+                android:layout_marginRight="20px" android:layout_marginLeft="10px"
+                android:layout_toRightOf="@+id/lblDate" android:gravity="center_vertical|left"
+                android:textColor="@color/gray" android:textSize="@dimen/EditTextFontSize"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblContent" android:layout_alignLeft="@+id/lblTite"
+                android:layout_alignRight="@+id/lblName" android:layout_below="@+id/lblTite"
+                android:layout_marginTop="20px" android:gravity="left|top" android:textColor="@color/gray"
+                android:textSize="@dimen/EditTextFontSize"/>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30px" android:layout_below="@+id/lblContent">
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
